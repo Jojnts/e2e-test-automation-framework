@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+}
+
+group 'com.test'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    testCompile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'org.testng:testng:6.10'
+    testCompile 'io.appium:java-client:7.0.0'
+    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.26'
+}
+
+
+test {
+    useTestNG() {
+        dependsOn cleanTest
+        useDefaultListeners = true
+        suites "src/test/testng.xml"
+    }
+}
+
+tasks.withType(Test) {
+    useTestNG() {
+        reports.html.enabled = false
+        outputDirectory = file("$project.buildDir//testngOutput")
+        dependsOn cleanTest
+        useDefaultListeners true
+        suites 'src/test/testng.xml'
+    }
+}
