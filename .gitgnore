@@ -1,0 +1,11 @@
+#IDE specific files
+.idea/*
+build
+build/*
+gradle
+gradle/*
+.gradle
+.gradle/*
+src/gradlew
+src/gradlew.bat
+src/settings.gradle
