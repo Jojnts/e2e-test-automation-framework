@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="4" total="14" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All tests" duration-ms="187680" started-at="2019-06-05T12:01:00Z" finished-at="2019-06-05T12:04:08Z">
+    <groups>
+      <group name="signupAndDelete">
+        <method signature="SignUpTest.createAccountInTheSignupFlowAndThenDeactivateTheAccount()[pri:0, instance:com.automation.testCases.Signup.SignUpTest@60e769d2]" name="createAccountInTheSignupFlowAndThenDeactivateTheAccount" class="com.automation.testCases.Signup.SignUpTest"/>
+        <method signature="SignUpTest.createAccountInTheSignupFlowAndThenDeactivateTheAccount()[pri:0, instance:com.automation.testCases.Signup.SignUpTest@1f71f933]" name="createAccountInTheSignupFlowAndThenDeactivateTheAccount" class="com.automation.testCases.Signup.SignUpTest"/>
+      </group> <!-- signupAndDelete -->
+    </groups>
+    <test name="Android device 2" duration-ms="186001" started-at="2019-06-05T12:01:00Z" finished-at="2019-06-05T12:04:06Z">
+      <class name="com.automation.testCases.Login.LoginFromStartViewTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.testCases.Login.LoginFromStartViewTest@5d185f75]" name="setup" is-config="true" duration-ms="24177" started-at="2019-06-05T14:03:05Z" finished-at="2019-06-05T14:03:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[52RBB18123202825]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="fromStartpageLoginWithWrongCredential()[pri:0, instance:com.automation.testCases.Login.LoginFromStartViewTest@5d185f75]" name="fromStartpageLoginWithWrongCredential" duration-ms="14788" started-at="2019-06-05T14:03:29Z" finished-at="2019-06-05T14:03:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fromStartpageLoginWithWrongCredential -->
+        <test-method status="PASS" signature="fromStartpageLoginWitDdifferentWrongCredential(java.lang.String, java.lang.String)[pri:0, instance:com.automation.testCases.Login.LoginFromStartViewTest@5d185f75]" name="fromStartpageLoginWitDdifferentWrongCredential" duration-ms="5393" started-at="2019-06-05T14:03:44Z" data-provider="loginNegative" depends-on-methods="com.automation.testCases.Login.LoginFromStartViewTest.fromStartpageLoginWithWrongCredential" finished-at="2019-06-05T14:03:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dren@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fromStartpageLoginWitDdifferentWrongCredential -->
+        <test-method status="PASS" signature="fromStartpageLoginWitDdifferentWrongCredential(java.lang.String, java.lang.String)[pri:0, instance:com.automation.testCases.Login.LoginFromStartViewTest@5d185f75]" name="fromStartpageLoginWitDdifferentWrongCredential" duration-ms="5504" started-at="2019-06-05T14:03:49Z" data-provider="loginNegative" depends-on-methods="com.automation.testCases.Login.LoginFromStartViewTest.fromStartpageLoginWithWrongCredential" finished-at="2019-06-05T14:03:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abcabc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fromStartpageLoginWitDdifferentWrongCredential -->
+        <test-method status="PASS" signature="fromStartpageLoginWitDdifferentWrongCredential(java.lang.String, java.lang.String)[pri:0, instance:com.automation.testCases.Login.LoginFromStartViewTest@5d185f75]" name="fromStartpageLoginWitDdifferentWrongCredential" duration-ms="5376" started-at="2019-06-05T14:03:55Z" data-provider="loginNegative" depends-on-methods="com.automation.testCases.Login.LoginFromStartViewTest.fromStartpageLoginWithWrongCredential" finished-at="2019-06-05T14:04:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@emailcom]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fromStartpageLoginWitDdifferentWrongCredential -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.testCases.Login.LoginFromStartViewTest@5d185f75]" name="tearDown" is-config="true" duration-ms="5187" started-at="2019-06-05T14:04:00Z" finished-at="2019-06-05T14:04:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automation.testCases.Login.LoginFromStartViewTest -->
+      <class name="com.automation.testCases.Signup.SignUpTest">
+        <test-method status="PASS" signature="startAppiumServers(java.lang.String)[pri:0, instance:com.automation.testCases.Signup.SignUpTest@1f71f933]" name="startAppiumServers" is-config="true" duration-ms="6" started-at="2019-06-05T14:01:00Z" finished-at="2019-06-05T14:01:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAppiumServers -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.testCases.Signup.SignUpTest@1f71f933]" name="setup" is-config="true" duration-ms="45945" started-at="2019-06-05T14:01:00Z" finished-at="2019-06-05T14:01:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[52RBB18123202825]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="createAccountInTheSignupFlowAndThenDeactivateTheAccount()[pri:0, instance:com.automation.testCases.Signup.SignUpTest@1f71f933]" name="createAccountInTheSignupFlowAndThenDeactivateTheAccount" duration-ms="71938" started-at="2019-06-05T14:01:46Z" finished-at="2019-06-05T14:02:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountInTheSignupFlowAndThenDeactivateTheAccount -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.testCases.Signup.SignUpTest@1f71f933]" name="tearDown" is-config="true" duration-ms="6931" started-at="2019-06-05T14:02:58Z" finished-at="2019-06-05T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="stopAppiumServers(java.lang.String)[pri:0, instance:com.automation.testCases.Signup.SignUpTest@1f71f933]" name="stopAppiumServers" is-config="true" duration-ms="741" started-at="2019-06-05T14:04:05Z" finished-at="2019-06-05T14:04:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopAppiumServers -->
+      </class> <!-- com.automation.testCases.Signup.SignUpTest -->
+    </test> <!-- Android device 2 -->
+    <test name="Android device 1" duration-ms="187680" started-at="2019-06-05T12:01:00Z" finished-at="2019-06-05T12:04:08Z">
+      <class name="com.automation.testCases.Login.LoginFromStartViewTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.testCases.Login.LoginFromStartViewTest@4ad402f7]" name="setup" is-config="true" duration-ms="49045" started-at="2019-06-05T14:02:55Z" finished-at="2019-06-05T14:03:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CB512DERZH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5100]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="fromStartpageLoginWithWrongCredential()[pri:0, instance:com.automation.testCases.Login.LoginFromStartViewTest@4ad402f7]" name="fromStartpageLoginWithWrongCredential" duration-ms="10110" started-at="2019-06-05T14:03:44Z" finished-at="2019-06-05T14:03:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fromStartpageLoginWithWrongCredential -->
+        <test-method status="PASS" signature="fromStartpageLoginWitDdifferentWrongCredential(java.lang.String, java.lang.String)[pri:0, instance:com.automation.testCases.Login.LoginFromStartViewTest@4ad402f7]" name="fromStartpageLoginWitDdifferentWrongCredential" duration-ms="4149" started-at="2019-06-05T14:03:54Z" data-provider="loginNegative" depends-on-methods="com.automation.testCases.Login.LoginFromStartViewTest.fromStartpageLoginWithWrongCredential" finished-at="2019-06-05T14:03:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dren@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fromStartpageLoginWitDdifferentWrongCredential -->
+        <test-method status="PASS" signature="fromStartpageLoginWitDdifferentWrongCredential(java.lang.String, java.lang.String)[pri:0, instance:com.automation.testCases.Login.LoginFromStartViewTest@4ad402f7]" name="fromStartpageLoginWitDdifferentWrongCredential" duration-ms="4017" started-at="2019-06-05T14:03:58Z" data-provider="loginNegative" depends-on-methods="com.automation.testCases.Login.LoginFromStartViewTest.fromStartpageLoginWithWrongCredential" finished-at="2019-06-05T14:04:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abcabc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fromStartpageLoginWitDdifferentWrongCredential -->
+        <test-method status="PASS" signature="fromStartpageLoginWitDdifferentWrongCredential(java.lang.String, java.lang.String)[pri:0, instance:com.automation.testCases.Login.LoginFromStartViewTest@4ad402f7]" name="fromStartpageLoginWitDdifferentWrongCredential" duration-ms="3938" started-at="2019-06-05T14:04:02Z" data-provider="loginNegative" depends-on-methods="com.automation.testCases.Login.LoginFromStartViewTest.fromStartpageLoginWithWrongCredential" finished-at="2019-06-05T14:04:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@emailcom]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fromStartpageLoginWitDdifferentWrongCredential -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.testCases.Login.LoginFromStartViewTest@4ad402f7]" name="tearDown" is-config="true" duration-ms="1177" started-at="2019-06-05T14:04:06Z" finished-at="2019-06-05T14:04:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automation.testCases.Login.LoginFromStartViewTest -->
+      <class name="com.automation.testCases.Signup.SignUpTest">
+        <test-method status="PASS" signature="startAppiumServers(java.lang.String)[pri:0, instance:com.automation.testCases.Signup.SignUpTest@60e769d2]" name="startAppiumServers" is-config="true" duration-ms="6" started-at="2019-06-05T14:01:00Z" finished-at="2019-06-05T14:01:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5100]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAppiumServers -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.testCases.Signup.SignUpTest@60e769d2]" name="setup" is-config="true" duration-ms="54409" started-at="2019-06-05T14:01:00Z" finished-at="2019-06-05T14:01:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CB512DERZH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5100]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="createAccountInTheSignupFlowAndThenDeactivateTheAccount()[pri:0, instance:com.automation.testCases.Signup.SignUpTest@60e769d2]" name="createAccountInTheSignupFlowAndThenDeactivateTheAccount" duration-ms="58859" started-at="2019-06-05T14:01:55Z" finished-at="2019-06-05T14:02:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountInTheSignupFlowAndThenDeactivateTheAccount -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.testCases.Signup.SignUpTest@60e769d2]" name="tearDown" is-config="true" duration-ms="1296" started-at="2019-06-05T14:02:53Z" finished-at="2019-06-05T14:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="stopAppiumServers(java.lang.String)[pri:0, instance:com.automation.testCases.Signup.SignUpTest@60e769d2]" name="stopAppiumServers" is-config="true" duration-ms="665" started-at="2019-06-05T14:04:07Z" finished-at="2019-06-05T14:04:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5100]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopAppiumServers -->
+      </class> <!-- com.automation.testCases.Signup.SignUpTest -->
+    </test> <!-- Android device 1 -->
+  </suite> <!-- All tests -->
+</testng-results>

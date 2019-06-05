@@ -11,6 +11,11 @@ repositories {
     mavenCentral()
 }
 
+final def homeGithub =  System.env.HOME_GITHUB
+final def projectName = gradle.rootProject.name
+final def gradleUserHomeDir = gradle.getGradleUserHomeDir()
+
+
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
@@ -22,21 +27,40 @@ dependencies {
     testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.26'
 }
 
-
 test {
-    useTestNG() {
-        dependsOn cleanTest
-        useDefaultListeners = true
-        suites "src/test/testng.xml"
+    systemProperties = System.properties
+    if (projectName) {
+        systemProperties['projectName'] = projectName
     }
+    if(homeGithub) {
+        systemProperties['homeGithub'] = homeGithub
+    }
+
+    if(gradleUserHomeDir) {
+        systemProperties['gradleUserHomeDir'] = gradleUserHomeDir
+    }
+
 }
 
+ext{
+    if (!project.hasProperty('suiteFile')) {
+        suiteFile = "testng.xml"
+    }
+    if (!project.hasProperty('testEnv')) {
+        testEnv = "stage"
+    }
+    if (!project.hasProperty('appiumIp')) {
+        appiumIp = "127.0.0.1"
+    }
+}
 tasks.withType(Test) {
     useTestNG() {
         reports.html.enabled = false
-        outputDirectory = file("$project.buildDir//testngOutput")
+        outputDirectory = file("$project.buildDir/testngOutput")
         dependsOn cleanTest
         useDefaultListeners true
-        suites 'src/test/testng.xml'
+        suites 'src/test/' + suiteFile
+        systemProperties['testEnv'] = testEnv
+        systemProperties['appiumIp'] = appiumIp
     }
 }

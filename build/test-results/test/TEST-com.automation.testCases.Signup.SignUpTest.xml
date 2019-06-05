@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.automation.testCases.Signup.SignUpTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-06-05T12:01:55" hostname="DESKTOP-CCGNHEN" time="63.478">
+  <properties/>
+  <testcase name="createAccountInTheSignupFlowAndThenDeactivateTheAccount" classname="com.automation.testCases.Signup.SignUpTest" time="58.859"/>
+  <testcase name="createAccountInTheSignupFlowAndThenDeactivateTheAccount" classname="com.automation.testCases.Signup.SignUpTest" time="71.938"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jun 05, 2019 2:01:00 PM com.automation.config.WebDriver createOrReuseDriver
+INFO: CREATE driver for 52RBB18123202825
+Jun 05, 2019 2:01:00 PM com.automation.config.WebDriver createOrReuseDriver
+INFO: CREATE driver for CB512DERZH
+Jun 05, 2019 2:01:00 PM com.automation.config.WebDriver getCapabilities
+INFO: Create DesiredCapabilities for device ID 52RBB18123202825
+Jun 05, 2019 2:01:00 PM com.automation.config.WebDriver getCapabilities
+INFO: Create DesiredCapabilities for device ID CB512DERZH
+Jun 05, 2019 2:01:00 PM com.automation.config.WebDriver createDriver
+INFO: -------Starts creating a driver for the device  52RBB18123202825 thread  Thread[TestNG,5,main]
+Jun 05, 2019 2:01:00 PM com.automation.config.WebDriver createDriver
+INFO: -------Starts creating a driver for the device  CB512DERZH thread  Thread[TestNG,5,main]
+Jun 05, 2019 2:01:00 PM com.automation.config.EnvironmentConfig appiumServerUrl
+INFO: appiumIp is 127.0.0.1
+Jun 05, 2019 2:01:00 PM com.automation.config.EnvironmentConfig appiumServerUrl
+INFO: appiumIp is 127.0.0.1
+Jun 05, 2019 2:01:17 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+Jun 05, 2019 2:01:17 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: The css string is .registration__debug-settings-button
+Jun 05, 2019 2:01:17 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO:  Waiting for Page Object to be instantiated CB512DERZH loop nr 0
+Jun 05, 2019 2:01:20 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 0 for element .registration__debug-settings-button
+Jun 05, 2019 2:01:23 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 1 for element .registration__debug-settings-button
+Jun 05, 2019 2:01:26 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 2 for element .registration__debug-settings-button
+Jun 05, 2019 2:01:29 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 3 for element .registration__debug-settings-button
+Jun 05, 2019 2:01:32 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 4 for element .registration__debug-settings-button
+Jun 05, 2019 2:01:35 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 5 for element .registration__debug-settings-button
+Jun 05, 2019 2:01:38 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 6 for element .registration__debug-settings-button
+Jun 05, 2019 2:01:41 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 7 for element .registration__debug-settings-button
+Jun 05, 2019 2:01:44 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 8 for element .registration__debug-settings-button
+Jun 05, 2019 2:01:45 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+Jun 05, 2019 2:01:45 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: The css string is .registration__debug-settings-button
+Jun 05, 2019 2:01:45 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 05, 2019 2:01:46 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page 52RBB18123202825 loop nr 0 for element .registration__debug-settings-button
+Jun 05, 2019 2:01:46 PM com.automation.config.WebDriver createDriver
+INFO: Created driver to RETURN : 52RBB18123202825
+Jun 05, 2019 2:01:46 PM com.automation.pageObjects.StartPage clickOnDebugButton
+INFO: Click Debug button
+Jun 05, 2019 2:01:46 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: The css string is button.registration__debug-settings-button
+Jun 05, 2019 2:01:46 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 05, 2019 2:01:47 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 9 for element .registration__debug-settings-button
+Jun 05, 2019 2:01:50 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 10 for element .registration__debug-settings-button
+Jun 05, 2019 2:01:50 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page 52RBB18123202825 loop nr 0 for element button.registration__debug-settings-button
+Jun 05, 2019 2:01:51 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: The css string is div.check-box__check
+Jun 05, 2019 2:01:51 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 05, 2019 2:01:52 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page 52RBB18123202825 loop nr 0 for element div.check-box__check
+Jun 05, 2019 2:01:52 PM com.automation.pageObjects.DebugPage clickToCheckTheDebugValuesAndSeRadioButton
+INFO: Select the debug check box
+Jun 05, 2019 2:01:54 PM com.automation.pageObjects.DebugPage tapTheButtonSignup
+INFO: Select the debug check box
+Jun 05, 2019 2:01:55 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 11 for element .registration__debug-settings-button
+Jun 05, 2019 2:01:55 PM com.automation.config.WebDriver createDriver
+INFO: Created driver to RETURN : CB512DERZH
+Jun 05, 2019 2:01:55 PM com.automation.pageObjects.StartPage clickOnDebugButton
+INFO: Click Debug button
+Jun 05, 2019 2:01:55 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: The css string is button.registration__debug-settings-button
+Jun 05, 2019 2:01:55 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO:  Waiting for Page Object to be instantiated CB512DERZH loop nr 0
+Jun 05, 2019 2:01:55 PM com.automation.pageObjects.QuestionPage startTheQuestionary
+INFO: Start the question flow
+Jun 05, 2019 2:01:55 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: The css string is button.therapist__button
+Jun 05, 2019 2:01:55 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 05, 2019 2:01:56 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 0 for element button.registration__debug-settings-button
+Jun 05, 2019 2:01:56 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: The css string is div.check-box__check
+Jun 05, 2019 2:01:56 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO:  Waiting for Page Object to be instantiated CB512DERZH loop nr 0
+Jun 05, 2019 2:01:56 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page 52RBB18123202825 loop nr 0 for element button.therapist__button
+Jun 05, 2019 2:01:57 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 0 for element div.check-box__check
+Jun 05, 2019 2:01:57 PM com.automation.pageObjects.DebugPage clickToCheckTheDebugValuesAndSeRadioButton
+INFO: Select the debug check box
+Jun 05, 2019 2:01:58 PM com.automation.pageObjects.DebugPage tapTheButtonSignup
+INFO: Select the debug check box
+Jun 05, 2019 2:01:59 PM com.automation.pageObjects.QuestionPage startTheQuestionary
+INFO: Start the question flow
+Jun 05, 2019 2:01:59 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: The css string is button.therapist__button
+Jun 05, 2019 2:01:59 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO:  Waiting for Page Object to be instantiated CB512DERZH loop nr 0
+Jun 05, 2019 2:02:00 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 0 for element button.therapist__button
+Jun 05, 2019 2:02:30 PM com.automation.pageObjects.AuthSignupPage createAccount
+INFO: Create an account in the Signup flow
+Jun 05, 2019 2:02:30 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: The css string is input.email__field[name='email']
+Jun 05, 2019 2:02:30 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 05, 2019 2:02:31 PM com.automation.pageObjects.AuthSignupPage createAccount
+INFO: Create an account in the Signup flow
+Jun 05, 2019 2:02:31 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: The css string is input.email__field[name='email']
+Jun 05, 2019 2:02:31 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO:  Waiting for Page Object to be instantiated CB512DERZH loop nr 0
+Jun 05, 2019 2:02:31 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page 52RBB18123202825 loop nr 0 for element input.email__field[name='email']
+Jun 05, 2019 2:02:32 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 0 for element input.email__field[name='email']
+Jun 05, 2019 2:02:34 PM com.automation.pageObjects.PatientOnboardingPage finnishTheOnboarding
+INFO: Start typing the wrong login credentials
+Jun 05, 2019 2:02:34 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: The css string is input[name='first_name']
+Jun 05, 2019 2:02:34 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO:  Waiting for Page Object to be instantiated CB512DERZH loop nr 0
+Jun 05, 2019 2:02:35 PM com.automation.pageObjects.PatientOnboardingPage finnishTheOnboarding
+INFO: Start typing the wrong login credentials
+Jun 05, 2019 2:02:35 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: The css string is input[name='first_name']
+Jun 05, 2019 2:02:35 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 05, 2019 2:02:35 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 0 for element input[name='first_name']
+Jun 05, 2019 2:02:36 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page 52RBB18123202825 loop nr 0 for element input[name='first_name']
+Jun 05, 2019 2:02:36 PM com.automation.pageObjects.PatientOnboardingPage finnishTheOnboarding
+INFO: In yearOption 1920
+Jun 05, 2019 2:02:38 PM com.automation.pageObjects.PatientOnboardingPage finnishTheOnboarding
+INFO: In yearOption 1920
+Jun 05, 2019 2:02:39 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: The css string is div.app-top-bar__profile
+Jun 05, 2019 2:02:39 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO:  Waiting for Page Object to be instantiated CB512DERZH loop nr 0
+Jun 05, 2019 2:02:41 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: The css string is div.app-top-bar__profile
+Jun 05, 2019 2:02:41 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 05, 2019 2:02:42 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 0 for element div.app-top-bar__profile
+Jun 05, 2019 2:02:43 PM com.automation.pageObjects.PatientMobileMainPage clickOkayToTalkWitPhysiotherapist
+INFO: Show my profile
+Jun 05, 2019 2:02:43 PM com.automation.pageObjects.PatientMobileMainPage waitForPageToBeLoaded
+INFO: Loading the page
+Jun 05, 2019 2:02:45 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page 52RBB18123202825 loop nr 0 for element div.app-top-bar__profile
+Jun 05, 2019 2:02:46 PM com.automation.pageObjects.PatientMobileMainPage clickOkayToTalkWitPhysiotherapist
+INFO: Show my profile
+Jun 05, 2019 2:02:46 PM com.automation.pageObjects.PatientMobileMainPage waitForPageToBeLoaded
+INFO: Loading the page
+Jun 05, 2019 2:02:47 PM com.automation.pageObjects.PatientMobileMainPage clickShowMyProfile
+INFO: Show my profile
+Jun 05, 2019 2:02:47 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: The css string is div.app-top-bar__profile
+Jun 05, 2019 2:02:47 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO:  Waiting for Page Object to be instantiated CB512DERZH loop nr 0
+Jun 05, 2019 2:02:48 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 0 for element div.app-top-bar__profile
+Jun 05, 2019 2:02:49 PM com.automation.pageObjects.PatientMobileShowProfilePage clickOnMyAccountSettings
+INFO: Start to delete my account
+Jun 05, 2019 2:02:49 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: The css string is button.mobile-profile__item.mobile-profile__item--chevron
+Jun 05, 2019 2:02:49 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO:  Waiting for Page Object to be instantiated CB512DERZH loop nr 0
+Jun 05, 2019 2:02:50 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 0 for element button.mobile-profile__item.mobile-profile__item--chevron
+Jun 05, 2019 2:02:51 PM com.automation.pageObjects.PatientMobileShowProfileSettingsPage deleteMyAccount
+INFO: Start to delete my account
+Jun 05, 2019 2:02:51 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: The css string is icon-link.icon-link--delete
+Jun 05, 2019 2:02:51 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO:  Waiting for Page Object to be instantiated CB512DERZH loop nr 0
+Jun 05, 2019 2:02:51 PM com.automation.pageObjects.PatientMobileMainPage clickShowMyProfile
+INFO: Show my profile
+Jun 05, 2019 2:02:51 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: The css string is div.app-top-bar__profile
+Jun 05, 2019 2:02:51 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 05, 2019 2:02:52 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page CB512DERZH loop nr 0 for element icon-link.icon-link--delete
+Jun 05, 2019 2:02:52 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Start Page 52RBB18123202825 loop nr 0 for element div.app-top-bar__profile
+Jun 05, 2019 2:02:53 PM com.automation.pageObjects.PatientMobileShowProfilePage clickOnMyAccountSettings
+INFO: Start to delete my account
+Jun 05, 2019 2:02:53 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: The css string is button.mobile-profile__item.mobile-profile__item--chevron
+Jun 05, 2019 2:02:53 PM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+]]></system-err>
+</testsuite>

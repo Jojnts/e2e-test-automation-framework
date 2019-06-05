@@ -27,10 +27,9 @@ public abstract class HelpFunctions {
         while (counter < timeLimit ) {
             LOG.info(" Waiting for Page Object to be instantiated " + device + " loop nr " + counter);
             try {
-                Thread.sleep(1000);
                 counter++;
+                Thread.sleep(1000);
                 if (driver.findElements(By.cssSelector(css)) == null) {
-
                 } else {
                     counter = timeLimit + 1;
                 }
@@ -42,7 +41,7 @@ public abstract class HelpFunctions {
         counter=0;
         timeLimit = 50;
         while (counter < timeLimit ) {
-            LOG.info("In the loop  waiting for the Start Page " + device + " loop nr " + counter + " startPage._buttonList.size() " );
+            LOG.info("In the loop  waiting for the Start Page " + device + " loop nr " + counter + " for element " + css );
             if (counter < timeLimit ){
                 counter++;
                 try {
@@ -55,7 +54,7 @@ public abstract class HelpFunctions {
                     LOG.info("Catched an exception while in the loop " + device + " driverId " + driver);
                 }
             } else if (counter == timeLimit) {
-                LOG.info("  Page Object not found in waitForPageToBeLoaded ");
+                LOG.info("  Element not found in waitForPageToBeLoaded ");
             }
         }
     }

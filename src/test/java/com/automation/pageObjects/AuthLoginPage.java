@@ -34,7 +34,8 @@ public class AuthLoginPage {
     @FindBy(css = "button.spinner-button")
     private WebElement _loginButton;
 
-    @FindBy(css = "div.email__error")
+    private static final String _errorMessageCss = "div.email__error";
+    @FindBy(css = _errorMessageCss)
     private WebElement _errorMessage;
 
     public void enterLoginCredentials(final AppiumDriver driver, String userEmail, String userPassword) {
@@ -50,6 +51,7 @@ public class AuthLoginPage {
 
     public String errorMessageTextIs(final AppiumDriver driver) {
         LOG.info("Get the error message to be verified ");
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _errorMessageCss);
         return _errorMessage.getText();
     }
 }

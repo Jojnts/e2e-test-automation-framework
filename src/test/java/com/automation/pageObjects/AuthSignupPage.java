@@ -42,14 +42,12 @@ public class AuthSignupPage {
         LOG.info("Create an account in the Signup flow");
         waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _emailInputListCss);
         Capabilities cap = driver.getCapabilities();
-        String device = cap.getCapability("deviceName").toString();
-        if(device.equalsIgnoreCase("emulator-5554")){
-            userEmail = 5 + userEmail ;
-            userPassword = 5 + userPassword;
-        }
+        String deviceNamefourCharacters = cap.getCapability("deviceName").toString().substring(0, 3);
+        //to have unique user names per device when signing up
+        userEmail = deviceNamefourCharacters + userEmail ;
         _emailInputList.get(0).sendKeys(userEmail);
         _password.sendKeys(userPassword);
-        _passwordConfirmation.sendKeys(userPassword); //need to be at least 8 characters
+        _passwordConfirmation.sendKeys(userPassword);
         _creatAccountButton.click();
     }
 }

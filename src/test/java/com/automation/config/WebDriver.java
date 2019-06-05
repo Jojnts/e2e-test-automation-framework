@@ -10,11 +10,14 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.*;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
-import static com.automation.helpFunctions.HelpFunctions.*;
+import static com.automation.config.EnvironmentConfig.*;
+import static com.automation.helpFunctions.HelpFunctions.waitForThePageObjectToBeLoadedToFindTheWebElement;
 
 public class WebDriver {
     private static final Logger LOG = Logger.getLogger(WebDriver.class.getName());
@@ -35,54 +38,54 @@ public class WebDriver {
     private AppiumDriver driver;
 
 
-    public AppiumDriver createOrReuseDriver(final String UDID_, final String URL_, final String platform, final String platformVersion) {
-        if (driverMap.containsKey(UDID_)) {
-            LOG.info("Already INITIATED driver for " + UDID_);
-            driver = reuseDriver(UDID_);
+    public AppiumDriver createOrReuseDriver(final String deviceId, final String appiumPort, final String platform, final String platformVersion) {
+        if (driverMap.containsKey(deviceId)) {
+            LOG.info("Already INITIATED driver for " + deviceId);
+            driver = reuseDriver(deviceId);
         } else {
-            LOG.info("CREATE driver for " + UDID_);
-            driver = createDriver( UDID_,  URL_,  platform,  platformVersion);
+            LOG.info("CREATE driver for " + deviceId);
+            driver = createDriver( deviceId,  appiumPort,  platform,  platformVersion);
         }
         return driver;
     }
 
-     private AppiumDriver createDriver(final String UDID_, final String URL_, final String platform, final String platformVersion) {
+     private AppiumDriver createDriver(final String deviceId, final String appiumPortNr, final String platform, final String platformVersion) {
         AppiumDriver driver = null;
-
-        DesiredCapabilities capabilities = getCapabilities( UDID_,  platform,  platformVersion);
+        DesiredCapabilities capabilities = getCapabilities( deviceId,  platform,  platformVersion);
         Thread threadnr = Thread.currentThread();
-        LOG.info("-------Starts creating a driver for the device  " + UDID_ + " thread  " + threadnr);
+        LOG.info("-------Starts creating a driver for the device  " + deviceId + " thread  " + threadnr);
          try {
-             driver = new AndroidDriver<MobileElement>(new URL("http://" + URL_), capabilities);
+             driver = new AndroidDriver<MobileElement>(new URL("http://" + appiumServerUrl() + ":" + appiumPortNr + "/wd/hub"), capabilities);
          } catch (MalformedURLException e) {
              e.printStackTrace();
          }
          driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-         driverMap.put(UDID_, driver);
+         driverMap.put(deviceId, driver);
          initiateInstances(driver);
          waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _buttonListCss);
-        LOG.info("Created driver to RETURN : " + UDID_);
+        LOG.info("Created driver to RETURN : " + deviceId);
         return driver;
     }
 
-    private DesiredCapabilities getCapabilities (final String UDID_, final String platform, final String platformVersion)  {
-        LOG.info("Create DesiredCapabilities for device ID " + UDID_ );
+    private DesiredCapabilities getCapabilities (final String deviceId, final String platform, final String platformVersion)  {
+        LOG.info("Create DesiredCapabilities for device ID " + deviceId );
+
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformVersion", platformVersion);
-        capabilities.setCapability("deviceName", UDID_);
+        capabilities.setCapability("deviceName", deviceId);
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platform);
         switch (platform.toLowerCase()) {
             case "ios":
                 //iOS capabilities here
                 break;
             case "android":
-                capabilities.setCapability(MobileCapabilityType.UDID, UDID_);
+                capabilities.setCapability(MobileCapabilityType.UDID, deviceId);
                 capabilities.setCapability("newCommandTimeout", 50);
                 capabilities.setCapability("autoWebview", "true");
-                capabilities.setCapability("appPackage", "ai.arthro.jointacademy_stage");
-                capabilities.setCapability("appActivity", ".MainActivity");
+                capabilities.setCapability("appPackage", appPackageToBeUse());
+                capabilities.setCapability("appActivity", APP_ACTIVITY);
                 capabilities.setCapability("noReset", "false");
-                capabilities.setCapability("chromedriverExecutableDir",System.getenv("HOME_GITHUB") + "\\e2e-test\\chromeDrivers");
+                capabilities.setCapability("chromedriverExecutableDir", useChromeDriverPath());
                 break;
             default:
                 try {
@@ -108,11 +111,9 @@ public class WebDriver {
 
     private AppiumDriver reuseDriver(final String deviceName) {
         AppiumDriver driver = (AppiumDriver) driverMap.get(deviceName);
-        initiateInstances(driver); //Don't needed anny more
         AndroidDriver driverA = (AndroidDriver) driver;
-        Activity activity = new Activity("ai.arthro.jointacademy_stage", ".MainActivity");
+        Activity activity = new Activity(appPackageToBeUse(), APP_ACTIVITY);
         driverA.startActivity(activity);
-        initiateInstances(driver);
         try {
             Thread.sleep(10000);
         } catch (InterruptedException e) {

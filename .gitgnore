@@ -1,5 +1,7 @@
 #IDE specific files
 .idea/*
+out
+out/*
 build
 build/*
 gradle

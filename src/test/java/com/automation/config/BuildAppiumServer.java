@@ -6,23 +6,18 @@ import io.appium.java_client.service.local.flags.GeneralServerFlag;
 
 import java.io.IOException;
 import java.net.ServerSocket;
-import java.util.HashMap;
 
 public class BuildAppiumServer {
 
-    private AppiumDriverLocalService serviceA;
-    private AppiumDriverLocalService serviceB;
     private AppiumDriverLocalService service;
     private AppiumServiceBuilder builder;
-
-    HashMap<Integer, AppiumDriverLocalService> map = new HashMap<Integer, AppiumDriverLocalService>();
 
     public void startServer(final String ipAddress, final String portNumber) {
 
         Integer port = Integer.parseInt(portNumber);
 
         builder = new AppiumServiceBuilder();
-        builder.withIPAddress("127.0.0.1");
+        builder.withIPAddress(ipAddress);
         builder.usingPort(port);
         builder.withArgument(GeneralServerFlag.SESSION_OVERRIDE);
         builder.withArgument(GeneralServerFlag.LOG_LEVEL,"error");
@@ -34,7 +29,7 @@ public class BuildAppiumServer {
         Integer port = Integer.parseInt(portNumber);
 
         builder = new AppiumServiceBuilder();
-        builder.withIPAddress("127.0.0.1");
+        builder.withIPAddress(ipAddress);
         builder.usingPort(port);
         builder.withArgument(GeneralServerFlag.SESSION_OVERRIDE);
         builder.withArgument(GeneralServerFlag.LOG_LEVEL,"error");
