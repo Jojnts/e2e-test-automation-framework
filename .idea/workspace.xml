@@ -2,108 +2,96 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61f20595-47fd-4f06-b84a-15cb3dc99e17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/config/BaseTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/config/BuildAppiumServer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/config/EnvironmentConfig$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/config/EnvironmentConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/config/WebDriver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/helpFunctions/HelpFunctions.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/AuthLoginPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/AuthSignupPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/DebugPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/PatientMobileMainPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/PatientMobileShowProfilePage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/PatientMobileShowProfileSettingsPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/PatientOnboardingPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/QuestionPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/StartPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/testCases/Login/LoginFromStartViewTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/com/automation/testCases/Signup/SignUpTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.automation.testCases.Login.LoginFromStartViewTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/All tests (0)/Android device 1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/All tests (0)/Android device 1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/bullet_point.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/collapseall.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/emailable-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/failed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/jquery-1.7.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/junitreports/TEST-com.automation.testCases.Login.LoginFromStartViewTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/navigator-bullet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/old/All tests (0)/Android device 1.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/old/All tests (0)/classes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/old/All tests (0)/groups.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/old/All tests (0)/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/old/All tests (0)/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/old/All tests (0)/methods-alphabetical.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/old/All tests (0)/methods-not-run.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/old/All tests (0)/methods.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/old/All tests (0)/reporter-output.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/old/All tests (0)/testng.xml.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/old/All tests (0)/toc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/old/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/passed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/skipped.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/testng-reports.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/testng-reports.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/testng-results.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/testngOutput/testng.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/automation/config/BaseTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/automation/config/BuildAppiumServer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/automation/config/EnvironmentConfig$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/automation/config/EnvironmentConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/automation/config/WebDriver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/automation/helpFunctions/HelpFunctions.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/AuthLoginPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/AuthSignupPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/DebugPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/PatientMobileMainPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/PatientMobileShowProfilePage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/PatientMobileShowProfileSettingsPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/PatientOnboardingPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/QuestionPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/StartPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/automation/testCases/Login/LoginFromStartViewTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/automation/testCases/Signup/SignUpTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/config/EnvironmentConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitgnore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitgnore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/config/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/config/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/config/BuildAppiumServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/config/BuildAppiumServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/config/WebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/config/WebDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/helpFunctions/HelpFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/helpFunctions/HelpFunctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/AuthLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/AuthLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/AuthSignupPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/AuthSignupPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/testng_oneDevice.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testng_oneDevice.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/testng_twoDevices.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testng_twoDevices.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/config/BaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/config/BuildAppiumServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/config/EnvironmentConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/config/EnvironmentConfig$EnvironmentNames.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/config/EnvironmentConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/config/WebDriver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/helpFunctions/HelpFunctions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/AuthLoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/AuthSignupPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/DebugPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/PatientMobileMainPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/PatientMobileShowProfilePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/PatientMobileShowProfileSettingsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/PatientOnboardingPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/QuestionPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/StartPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/testCases/Login/LoginFromStartViewTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/testCases/Signup/SignUpTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.automation.testCases.Login.LoginFromStartViewTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.automation.testCases.Signup.SignUpTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/All tests/Android device 1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/All tests/Android device 1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/All tests/Android device 2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/All tests/Android device 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/bullet_point.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/collapseall.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/failed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/jquery-1.7.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/junitreports/TEST-com.automation.testCases.Login.LoginFromStartViewTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/junitreports/TEST-com.automation.testCases.Signup.SignUpTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/navigator-bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/Android device 1.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/Android device 2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/passed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/skipped.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/testng-reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/testng-reports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/testng-results.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/testngOutput/testng.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_2757772006252983722_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_5660868314288174944_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/config/BaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/config/BuildAppiumServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/config/EnvironmentConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/config/EnvironmentConfig$EnvironmentNames.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/config/EnvironmentConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/config/WebDriver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/helpFunctions/HelpFunctions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/AuthLoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/AuthSignupPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/DebugPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/PatientMobileMainPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/PatientMobileShowProfilePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/PatientMobileShowProfileSettingsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/PatientOnboardingPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/QuestionPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/StartPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/testCases/Login/LoginFromStartViewTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/testCases/Signup/SignUpTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -128,18 +116,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/config/BuildAppiumServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/config/EnvironmentConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="113">
               <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -148,11 +127,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/testng_oneDevice.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+            <state relative-caret-position="136">
+              <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/PatientOnboardingPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,8 +151,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/testng_twoDevices.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+            <state relative-caret-position="221">
+              <caret line="13" selection-start-line="13" selection-end-line="16" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -178,8 +169,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/config/WebDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="63" column="35" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
+            <state relative-caret-position="206">
+              <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -187,33 +178,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/config/BaseTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
-              <folding>
-                <element signature="e#1238#1239#0" expanded="true" />
-                <element signature="e#1273#1274#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="60" column="32" selection-end-line="65" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/readme.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            <state relative-caret-position="153">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -285,6 +254,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -296,53 +266,17 @@
             <path>
               <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="gradle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="automation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="automation" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -469,9 +403,9 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28464818" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28784648" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -485,9 +419,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.43336946" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.43336946" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32917964" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32932165" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -895,8 +829,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="60" column="32" selection-end-line="65" selection-end-column="1" />
+        <state relative-caret-position="153">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -913,8 +847,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/config/WebDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="63" column="35" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
+        <state relative-caret-position="206">
+          <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -923,7 +857,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/config/EnvironmentConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="113">
           <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -940,15 +874,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/testng_twoDevices.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="16" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/testng_oneDevice.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+        <state relative-caret-position="136">
+          <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
         </state>
       </provider>
     </entry>
