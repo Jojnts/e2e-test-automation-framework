@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All tests" >
+    <test name="Android device 1">
+        <parameter name="PLATFORM_VERSION_" value="7.1.1"/>
+        <parameter name="UDID_" value="emulator-5554"/>
+        <parameter name="APPIUM_PORT_" value="5100"/>
+        <parameter name="PLATFORM_" value="Android"/>
+        <classes>
+           <!-- <class name="com.automation.testCases.Signup.SignUpTest"/> -->
+            <class name="com.automation.testCases.Login.LoginFromStartViewTest"/>
+        </classes>
+    </test>
+</suite>
