@@ -5,9 +5,11 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.Select;
+
 import java.util.List;
 import java.util.logging.Logger;
+
 import static com.automation.helpFunctions.HelpFunctions.waitForNextViewToBeLoaded;
 import static com.automation.helpFunctions.HelpFunctions.waitForThePageObjectToBeLoadedToFindTheWebElement;
 
@@ -21,8 +23,8 @@ public class QuestionPage {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    static final String  _therapistButtonCss = "button.therapist__button";
-    @FindBy(css = _therapistButtonCss)
+    static final String  _continueQuestionsCss = "button.button.therapist-intro__button";
+    @FindBy(css = _continueQuestionsCss)
     private WebElement _therapistButton;
 
     @FindBy(css = "div#radio--left_hip")
@@ -37,35 +39,39 @@ public class QuestionPage {
     @FindBy(css = ".vas-scale__label")
     private List<WebElement> _scaleList;
 
-    @FindBy(css = "button.question__button.question__button--first")
-    private WebElement _nextButton;
-
     @FindBy(css = "div#gender-female")
     private WebElement _genderFemale;
 
     @FindBy(css = "div#gender-male")
     private WebElement _genderMale;
 
-    @FindBy(css = "input[name='weight']")
-    private WebElement _weight;
+    @FindBy(css = "div#suggestion-radio_0")
+    private WebElement _timeForMeetingNo;
 
-    @FindBy(css = "input[name='centimeters'")
-    private WebElement _lengh;
+    @FindBy(css = "div#suggestion-radio_1")
+    private WebElement _timeForMeetingYes;
 
-    @FindBy(css = "textarea.symptoms__input-textarea")
-    private WebElement _textArea;
+    static final String _meetingFinnishButtonCss = "button.spinner-button";
+    @FindBy(css = _meetingFinnishButtonCss)
+    private List<WebElement> _meetingFinnishButton;
 
-    @FindBy(css = "div.check-box__check")
-    private List<WebElement> _checkBoxList;
+    static final String _registrationFinnishedButtonCss = "button.button.suggestion-done__button";
+    @FindBy(css = _registrationFinnishedButtonCss)
+    private WebElement _registrationFinnishedButton;
 
+    static final String _textAreaCommentCss = "textarea#comment";
+    @FindBy(css = _textAreaCommentCss)
+    private WebElement _textAreaComment;
 
-    public void startTheQuestionary(final AppiumDriver driver) {
+    static final String _thanksFromTherapistCss = "button.button.therapist-outro__button";
+    @FindBy(css = _thanksFromTherapistCss)
+    private WebElement _thanksFromTherapist;
+
+    public void startTheQuestionary(final AppiumDriver driver, String countryCode) {
         LOG.info("Start the question flow");
-        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _therapistButtonCss);
-        //1 Du kan börja din artrosbehandling direkt?
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _continueQuestionsCss, 0);
         _therapistButton.click();
         waitForNextViewToBeLoaded(1500);
-        //2 vilken ledbesvärar dig mest?
         _leftHip.click();
         waitForNextViewToBeLoaded(1500);
         //3 Har du fått diagnos artros i din vänstra höft tidigare?
@@ -86,24 +92,106 @@ public class QuestionPage {
         //8 Markera den ruta som motsvarar din genomsnittliga smärta från din vänstrahöft den senaste veckan.
         _scaleList.get(8).click();
         _nextButton.click();
-        waitForNextViewToBeLoaded(2000);
+        waitForNextViewToBeLoaded(1000);
         //9 Vilket är ditt kön?
         _genderMale.click();
+        waitForNextViewToBeLoaded(1000);
+        yearBirthDay();
+        lenghtAndWeight(countryCode);
+        moreInfoTOShare();
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _thanksFromTherapistCss, 4);
+        _thanksFromTherapist.click();
+        waitForNextViewToBeLoaded(1000);
+        _timeForMeetingYes.click();
+        _textAreaComment.sendKeys("About two weeks from now is okay. ");
+        driver.hideKeyboard();
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _thanksFromTherapistCss, 4);
+        _thanksFromTherapist.click();
+        LOG.info("Size of _meetingFinnishButton " + _meetingFinnishButton.size());
+        _meetingFinnishButton.get(0).click();
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _registrationFinnishedButtonCss, 10);
+        _registrationFinnishedButton.click();
+        waitForNextViewToBeLoaded(3500);
+    }
+
+
+    @FindBy(css = "select[name='year']")
+    private WebElement _yearList;
+
+    @FindBy(css = "select[name='month']")
+    private WebElement _monthList;
+
+    @FindBy(css = "select[name='day']")
+    private WebElement _dayList;
+
+    @FindBy(css = "div.questions-information__input-header")
+    private WebElement _inputNameHeader;
+
+    @FindBy(css = "button.question__button")
+    private WebElement _continueButton;
+
+    private void yearBirthDay() {
+        Select oSelect = new Select(_yearList);
+        List <WebElement> elementCount = oSelect.getOptions();
+        LOG.info("In yearOption " + elementCount.get(20).getText());
+        elementCount.get(80).click();
+        oSelect = new Select(_monthList);
+        elementCount = oSelect.getOptions();
+        elementCount.get(4).click();
+        oSelect = new Select(_dayList);
+        elementCount = oSelect.getOptions();
+        elementCount.get(10).click();
+        _inputNameHeader.click();
+        waitForNextViewToBeLoaded(500);
+        _continueButton.click();
         waitForNextViewToBeLoaded(2000);
-        //10 Weighr and _lengh
-        _weight.sendKeys("145");
-        _lengh.sendKeys("167");
+    }
+
+
+    @FindBy(css = "input[name='weight']")
+    private WebElement _weight;
+
+    @FindBy(css = "input[name='centimeters'")
+    private WebElement _lengh;
+
+    @FindBy(css = "input.height__us-feet")
+    private WebElement _lenghUSfeet;
+
+    @FindBy(css = "input[name='inches']")
+    private WebElement _lenghUSinches;
+
+    @FindBy(css = "button.question__button")
+    private WebElement _nextButton;
+
+    private void lenghtAndWeight(String countryCode) {
+        switch (countryCode.toLowerCase()) {
+            case "us":
+                String weight="80";
+                String heightFeet="5";
+                String heightIn="6";
+                _weight.sendKeys(weight);
+                _lenghUSfeet.sendKeys(heightFeet);
+                _lenghUSinches.sendKeys(heightIn);
+                break;
+            default:
+                String weightSE="101";
+                String heightSE="165";
+                _weight.sendKeys(weightSE);
+                _lengh.sendKeys(heightSE);
+                break;
+        }
         waitForNextViewToBeLoaded(1500);
         _nextButton.click();
         waitForNextViewToBeLoaded(2000);
-        //11 Nedan kan du beskriva dina symptom och informera oss om allt gällande din hälsa
+    }
+
+    @FindBy(css = "textarea.symptoms__input-textarea")
+    private WebElement _textArea;
+
+    private void moreInfoTOShare () {
         _textArea.sendKeys("Det började en gång med att .....");
+        waitForNextViewToBeLoaded(1000);
         _nextButton.click();
         waitForNextViewToBeLoaded(2000);
-        //12 Godkänn ... läs igenom våra villkor innan du fortsätter.
-        _checkBoxList.get(0).click();
-        _checkBoxList.get(1).click();
-        _nextButton.click();
-        waitForNextViewToBeLoaded(3500);
     }
 }

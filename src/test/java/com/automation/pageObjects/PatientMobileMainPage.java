@@ -1,5 +1,6 @@
 package com.automation.pageObjects;
 
+import com.automation.helpFunctions.HelpFunctions;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebElement;
@@ -21,26 +22,31 @@ public class PatientMobileMainPage {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    private static final String _showProfileButtonCss = "div.app-top-bar__profile";
+    static final String _showProfileButtonCss = "div.app-top-bar__profile";
     @FindBy(css = _showProfileButtonCss)
     private WebElement _showProfileButton;
 
-    @FindBy(css = "button.button.button--outlined-white")
+    static final String _talkToPhysiotherapistButtonCss = "button.button.button--outlined-white";
+    @FindBy(css = _talkToPhysiotherapistButtonCss)
     private WebElement _talkToPhysiotherapistButton;
 
 
     public void clickShowMyProfile(final AppiumDriver driver) {
         LOG.info("Show my profile");
-        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _showProfileButtonCss);
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _showProfileButtonCss, 0);
        _showProfileButton.click();
     }
 
     public void clickOkayToTalkWitPhysiotherapist(final AppiumDriver driver) {
-        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _showProfileButtonCss);
-        LOG.info("Show my profile");
-        waitForPageToBeLoaded();
-        _talkToPhysiotherapistButton.click();
-
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _showProfileButtonCss, 0);
+        LOG.info("click message from Therapist");
+        try {
+            if (HelpFunctions.waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _talkToPhysiotherapistButtonCss, 5)) {
+                _talkToPhysiotherapistButton.click();
+            }
+        } catch (Exception e) {
+            //do nothing
+        }
     }
 
     private void waitForPageToBeLoaded() {

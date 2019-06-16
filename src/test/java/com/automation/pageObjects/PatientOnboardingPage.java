@@ -46,7 +46,7 @@ public class PatientOnboardingPage{
 
     public void finnishTheOnboarding(final AppiumDriver driver) {
         LOG.info("Start typing the wrong login credentials");
-        HelpFunctions.waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _firstNameCss);
+        HelpFunctions.waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _firstNameCss, 0);
         _firstName.sendKeys("Test");
         _lastName.sendKeys("Testis");
         Select oSelect = new Select(_yearList);

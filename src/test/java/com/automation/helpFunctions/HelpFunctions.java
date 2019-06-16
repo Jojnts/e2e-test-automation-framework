@@ -17,44 +17,85 @@ public abstract class HelpFunctions {
         }
     }
 
-
-    public static void waitForThePageObjectToBeLoadedToFindTheWebElement(final AppiumDriver driver, String css ) {
+    //Only for found elements
+    public static boolean isTheFoundElementDisplayed(final AppiumDriver driver, String css ) {
         String device = driver.getCapabilities().getCapability("deviceName").toString();
-        //Check  that the page object is created
-        Integer counter = 0;
-        Integer timeLimit = 40;
-        LOG.info("The css string is " + css);
-        while (counter < timeLimit ) {
-            LOG.info(" Waiting for Page Object to be instantiated " + device + " loop nr " + counter);
+        int counter = 0;
+        int timeLimit = 10;
+
+        while (counter < timeLimit) {
+            LOG.info(" Is the element displayed " + css + " on device " + device + " loop nr " + counter);
             try {
-                counter++;
+                counter= counter +1;
                 Thread.sleep(1000);
-                if (driver.findElements(By.cssSelector(css)) == null) {
+                if (!driver.findElement(By.cssSelector(css)).isDisplayed()) {
+
                 } else {
-                    counter = timeLimit + 1;
+                    return true;
                 }
-            }catch (Exception e) {
+            } catch (Exception e) {
                 LOG.info(" Catched a null pointer, do nothing");
+                return false;
             }
         }
-        //Check  that when the debug button is visible then the driver can be returned to start the test runs
-        counter=0;
-        timeLimit = 50;
+        return false;
+    }
+
+
+    public static boolean waitForThePageObjectToBeLoadedToFindTheWebElement(final AppiumDriver driver, String css, int  timeOutSeconds ) {
+        String device = driver.getCapabilities().getCapability("deviceName").toString();
+
+        int timeLimit = 0;
+        if( timeOutSeconds < 1 ) {
+            timeLimit = 20;
+        } else {
+            timeLimit = timeOutSeconds;
+        }
+        checkInitiationofPageObject(driver, css, timeLimit);
+
+        //isTheFoundElementDisplayed(driver, css);
+
+        int counter=0;
+        if( timeOutSeconds < 1 ) {
+            timeLimit = 40;
+        } else {
+            timeLimit = timeOutSeconds;
+        }
         while (counter < timeLimit ) {
-            LOG.info("In the loop  waiting for the Start Page " + device + " loop nr " + counter + " for element " + css );
+            LOG.info("In the loop  waiting for the Page Object on " + device + " loop nr " + counter + " for element " + css );
             if (counter < timeLimit ){
-                counter++;
+                counter = counter +2;
                 try {
                     if(driver.findElements(By.cssSelector(css)).size() > 0 ) {
-                        counter = timeLimit + 1;
+                        counter = timeLimit + 2;
+                        return isTheFoundElementDisplayed(driver, css);
                     }else {
-                        Thread.sleep(1000);
+                        Thread.sleep(2000);
                     }
                 }catch (Exception e){
                     LOG.info("Catched an exception while in the loop " + device + " driverId " + driver);
                 }
             } else if (counter == timeLimit) {
                 LOG.info("  Element not found in waitForPageToBeLoaded ");
+            }
+        }
+        return false;
+    }
+
+    private static void checkInitiationofPageObject(AppiumDriver driver, String css, int timeLimit) {
+        String device = driver.getCapabilities().getCapability("deviceName").toString();
+        int counter = 0;
+        while (counter < timeLimit) {
+            LOG.info(" Waiting for Page Object to be instantiated " + device + " loop nr " + counter);
+            try {
+                counter= counter +2;
+                Thread.sleep(2000);
+                if (driver.findElements(By.cssSelector(css)) == null) {
+                } else {
+                    counter = timeLimit + 1;
+                }
+            } catch (Exception e) {
+                LOG.info(" Catched a null pointer, do nothing");
             }
         }
     }

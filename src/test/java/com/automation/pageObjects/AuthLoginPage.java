@@ -9,7 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.logging.Logger;
 
-import static com.automation.helpFunctions.HelpFunctions.*;
+import static com.automation.helpFunctions.HelpFunctions.waitForNextViewToBeLoaded;
+import static com.automation.helpFunctions.HelpFunctions.waitForThePageObjectToBeLoadedToFindTheWebElement;
 
 public class AuthLoginPage {
     private static final Logger LOG = Logger.getLogger(AuthLoginPage.class.getName());
@@ -40,18 +41,19 @@ public class AuthLoginPage {
 
     public void enterLoginCredentials(final AppiumDriver driver, String userEmail, String userPassword) {
         LOG.info("Start typing the login credentials");
-        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _emailLabeCss);
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _emailLabeCss, 0);
         _emailLabel.click();
         _emailField.clear();
         _emailField.sendKeys(userEmail);
         _passwordField.clear();
         _passwordField.sendKeys(userPassword);
+        waitForNextViewToBeLoaded(1500);
         _loginButton.click();
     }
 
     public String errorMessageTextIs(final AppiumDriver driver) {
         LOG.info("Get the error message to be verified ");
-        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _errorMessageCss);
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _errorMessageCss, 0);
         return _errorMessage.getText();
     }
 }

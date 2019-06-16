@@ -31,7 +31,7 @@ public class PatientMobileShowProfilePage {
 
     public void clickOnMyAccountSettings(final AppiumDriver driver) {
         LOG.info("Start to delete my account");
-        HelpFunctions.waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _profileSettingsListCss);
+        HelpFunctions.waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _profileSettingsListCss, 0);
         _profileSettingsList.get(0).click();
     }
 }

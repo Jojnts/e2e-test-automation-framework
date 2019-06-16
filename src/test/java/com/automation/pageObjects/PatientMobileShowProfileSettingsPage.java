@@ -6,7 +6,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.util.logging.Logger;
 
 import static com.automation.helpFunctions.HelpFunctions.waitForNextViewToBeLoaded;
@@ -30,7 +30,7 @@ public class PatientMobileShowProfileSettingsPage {
 
     public void deleteMyAccount(final AppiumDriver driver) {
         LOG.info("Start to delete my account");
-        HelpFunctions.waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _deleteAccountButtonCss);
+        HelpFunctions.waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _deleteAccountButtonCss,0);
         _deleteAccountButton.click();
         waitForNextViewToBeLoaded(1000);
         _deactivateButton.click();

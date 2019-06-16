@@ -2,15 +2,15 @@ package com.automation.pageObjects;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.openqa.selenium.NotFoundException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 import java.util.logging.Logger;
 
-import static com.automation.helpFunctions.HelpFunctions.*;
+import static com.automation.helpFunctions.HelpFunctions.waitForThePageObjectToBeLoadedToFindTheWebElement;
 
 
 public class StartPage {
@@ -29,7 +29,12 @@ public class StartPage {
 
     public void clickOnDebugButton(final AppiumDriver driver) {
         LOG.info("Click Debug button");
-        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _buttonListCss);
-        _buttonList.get(0).click();
+        boolean found = waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _buttonListCss, 0);
+        if (found) {
+            _buttonList.get(0).click();
+        }else {
+            throw new NotFoundException();
+        }
+
     }
 }

@@ -6,6 +6,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import org.openqa.selenium.NotFoundException;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
@@ -17,6 +18,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 import static com.automation.config.EnvironmentConfig.*;
+import static com.automation.helpFunctions.HelpFunctions.waitForNextViewToBeLoaded;
 import static com.automation.helpFunctions.HelpFunctions.waitForThePageObjectToBeLoadedToFindTheWebElement;
 
 public class WebDriver {
@@ -25,15 +27,18 @@ public class WebDriver {
 
     static final String _buttonListCss = ".registration__debug-settings-button";
 
-    protected AuthSignupPage authSignupPage;
     protected AuthLoginPage authLoginPage;
     protected DebugPage debugPage;
+    protected GdprPage gdprPage;
+    protected PatientCreateAccountPage patientCreateAccountPage;
     protected PatientOnboardingPage patientOnboardingPage;
     protected PatientMobileMainPage patientMobileMainPage;
     protected PatientMobileShowProfilePage patientMobileShowProfilePage;
     protected PatientMobileShowProfileSettingsPage patientMobileShowProfileSettingsPage;
     protected QuestionPage questionOnePage;
     protected StartPage startPage;
+    protected TherapistStartPage therapistStartPage;
+    protected ZipCodePage zipCodePage;
 
     private AppiumDriver driver;
 
@@ -62,7 +67,12 @@ public class WebDriver {
          driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
          driverMap.put(deviceId, driver);
          initiateInstances(driver);
-         waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _buttonListCss);
+         boolean found = waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _buttonListCss , 0);
+         if(found) {
+             waitForNextViewToBeLoaded(4000);
+         } else {
+             throw new NotFoundException("The Page Object not found in the startup of the test");
+         }
         LOG.info("Created driver to RETURN : " + deviceId);
         return driver;
     }
@@ -98,15 +108,18 @@ public class WebDriver {
     }
 
     private void initiateInstances(final AppiumDriver driver){
-        authSignupPage = new AuthSignupPage(driver);
         debugPage = new DebugPage(driver);
         authLoginPage = new AuthLoginPage(driver);
+        gdprPage = new GdprPage(driver);
+        patientCreateAccountPage = new PatientCreateAccountPage(driver);
         patientOnboardingPage = new PatientOnboardingPage(driver);
         patientMobileMainPage = new PatientMobileMainPage(driver);
         patientMobileShowProfilePage = new PatientMobileShowProfilePage(driver);
         patientMobileShowProfileSettingsPage = new PatientMobileShowProfileSettingsPage(driver);
         questionOnePage = new QuestionPage(driver);
         startPage = new StartPage(driver);
+        therapistStartPage = new TherapistStartPage(driver);
+        zipCodePage = new ZipCodePage(driver);
     }
 
     private AppiumDriver reuseDriver(final String deviceName) {

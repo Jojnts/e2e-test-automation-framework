@@ -19,7 +19,7 @@ public class EnvironmentConfig {
     }
 
     private static String whenRunTestNgXmlFiles() {
-        EnvironmentNames testEnv  = EnvironmentNames.SANDBOX;
+        EnvironmentNames testEnv  = EnvironmentNames.STAGE;
         return testEnv.toString();
     }
 
