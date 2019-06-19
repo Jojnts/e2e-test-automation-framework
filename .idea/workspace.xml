@@ -2,96 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61f20595-47fd-4f06-b84a-15cb3dc99e17" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/config/BaseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/config/BuildAppiumServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/config/EnvironmentConfig$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/config/EnvironmentConfig$EnvironmentNames.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/config/EnvironmentConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/config/WebDriver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/helpFunctions/HelpFunctions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/AuthLoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/AuthSignupPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/DebugPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/PatientMobileMainPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/PatientMobileShowProfilePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/PatientMobileShowProfileSettingsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/PatientOnboardingPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/QuestionPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/pageObjects/StartPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/testCases/Login/LoginFromStartViewTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/automation/testCases/Signup/SignUpTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.automation.testCases.Login.LoginFromStartViewTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.automation.testCases.Signup.SignUpTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/All tests/Android device 1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/All tests/Android device 1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/All tests/Android device 2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/All tests/Android device 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/bullet_point.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/collapseall.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/emailable-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/failed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/jquery-1.7.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/junitreports/TEST-com.automation.testCases.Login.LoginFromStartViewTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/junitreports/TEST-com.automation.testCases.Signup.SignUpTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/navigator-bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/Android device 1.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/Android device 2.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/All tests/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/old/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/passed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/skipped.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/testng-reports.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/testng-reports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/testng-results.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testngOutput/testng.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_2757772006252983722_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_5660868314288174944_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/config/BaseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/config/BuildAppiumServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/config/EnvironmentConfig$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/config/EnvironmentConfig$EnvironmentNames.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/config/EnvironmentConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/config/WebDriver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/helpFunctions/HelpFunctions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/AuthLoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/AuthSignupPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/DebugPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/PatientMobileMainPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/PatientMobileShowProfilePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/PatientMobileShowProfileSettingsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/PatientOnboardingPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/QuestionPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/pageObjects/StartPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/testCases/Login/LoginFromStartViewTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/automation/testCases/Signup/SignUpTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/config/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/config/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/config/WebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/config/WebDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/helpFunctions/HelpFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/helpFunctions/HelpFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/AuthLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/AuthLoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/GdprPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/GdprPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/PatientMobileMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/PatientMobileMainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/QuestionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/QuestionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/StartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/TherapistStartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/TherapistStartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/ZipCodePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/ZipCodePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/testCases/Login/EmailLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/testCases/Login/EmailLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/testCases/Signup/EmailSignupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/testCases/Signup/EmailSignupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/testng_oneDevice.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testng_oneDevice.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/testng_twoDevices.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testng_twoDevices.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -116,43 +48,52 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/StartPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/TherapistStartPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="119" column="5" lean-forward="true" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/config/WebDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/config/EnvironmentConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/testng_oneDevice.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/config/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/PatientOnboardingPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/testng_twoDevices.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" selection-start-line="13" selection-end-line="16" selection-end-column="53" />
+              <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -167,31 +108,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/config/WebDriver.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/config/BuildAppiumServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+        <entry file="file://$PROJECT_DIR$/src/test/testng_oneDevice.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+              <caret line="9" column="73" lean-forward="true" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitgnore">
+        <entry file="file://$PROJECT_DIR$/src/test/testng_twoDevices.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+            <state relative-caret-position="408">
+              <caret line="24" selection-start-line="24" selection-end-line="25" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/ZipCodePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -209,8 +156,27 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>host</find>
+      <find>regex</find>
+      <find>My name is</find>
+      <find>my na</find>
+      <find>My name</find>
+      <find>my namex</find>
+      <find>my name</find>
+      <find>the therapists first</find>
+      <find>Electa</find>
+      <find>reuse</find>
+      <find>sendInviteAsTherapistInNorway</find>
       <find>Catched a null pointer, do nothing</find>
+      <find>Therapist name</find>
+      <find>private static final</find>
+      <find>static final</find>
+      <find>name</find>
+      <find>static final String</find>
     </findStrings>
+    <replaceStrings>
+      <replace>private static final</replace>
+      <replace>private static final String</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -220,19 +186,27 @@
       <list>
         <option value="$PROJECT_DIR$/src/buildTypeView.properties" />
         <option value="$PROJECT_DIR$/src/resources/buildTypeView.xsl" />
-        <option value="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/AuthLoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/AuthSignupPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/automation/helpFunctions/HelpFunctions.java" />
         <option value="$PROJECT_DIR$/src/test/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/automation/config/BuildAppiumServer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/automation/config/WebDriver.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/.gitgnore" />
-        <option value="$PROJECT_DIR$/src/test/testng_oneDevice.xml" />
-        <option value="$PROJECT_DIR$/src/test/testng_twoDevices.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/automation/config/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/automation/config/EnvironmentConfig.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/automation/helpFunctions/HelpFunctions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/automation/testCases/Login/EmailLoginTest.java" />
+        <option value="$PROJECT_DIR$/src/test/testng_twoDevices.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/automation/testCases/Signup/EmailSignupTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/automation/config/BaseTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/AuthLoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/GdprPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/PatientMobileMainPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/QuestionPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/StartPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/TherapistStartPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/automation/pageObjects/ZipCodePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/automation/config/WebDriver.java" />
+        <option value="$PROJECT_DIR$/src/test/testng_oneDevice.xml" />
       </list>
     </option>
   </component>
@@ -243,19 +217,17 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="183" />
-    <option name="y" value="44" />
-    <option name="width" value="1646" />
-    <option name="height" value="901" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="136" />
+    <option name="y" value="56" />
+    <option name="width" value="1493" />
+    <option name="height" value="947" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -266,17 +238,120 @@
             <path>
               <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="automation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="automation" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="automation" type="462c0819:PsiDirectoryNode" />
+              <item name="helpFunctions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="automation" type="462c0819:PsiDirectoryNode" />
+              <item name="pageObjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="automation" type="462c0819:PsiDirectoryNode" />
+              <item name="testCases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="automation" type="462c0819:PsiDirectoryNode" />
+              <item name="testCases" type="462c0819:PsiDirectoryNode" />
+              <item name="Login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e2e-test-automation-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e2e-test-automation-framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="automation" type="462c0819:PsiDirectoryNode" />
+              <item name="testCases" type="462c0819:PsiDirectoryNode" />
+              <item name="Signup" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,7 +375,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_oneDevice.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_twoDevices.xml">
     <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_oneDevice.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="e2e-test-automation-framework.test" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/testng_oneDevice.xml" />
@@ -335,6 +410,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_twoDevices.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="e2e-test-automation-framework.test" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/testng_twoDevices.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="e2e-test-automation-framework.test" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/testng.xml" />
@@ -345,15 +430,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EmailSignupTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="e2e-test-automation-framework.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.testCases.Signup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/testng_oneDevice.xml" />
+      <option name="PACKAGE_NAME" value="com.automation.testCases.Signup" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.testCases.Signup.EmailSignupTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="0" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="TestNG.C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng.xml" />
       <item itemvalue="TestNG.C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_oneDevice.xml" />
+      <item itemvalue="TestNG.EmailSignupTest" />
+      <item itemvalue="TestNG.C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_twoDevices.xml" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_oneDevice.xml" />
+        <item itemvalue="TestNG.C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_twoDevices.xml" />
         <item itemvalue="TestNG.C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_oneDevice.xml" />
         <item itemvalue="TestNG.C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng.xml" />
+        <item itemvalue="TestNG.EmailSignupTest" />
+        <item itemvalue="TestNG.C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_oneDevice.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -371,41 +483,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_oneDevice_xml - 2019.06.05 at 13h 11m 19s.xml">
-      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_oneDevice.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_twoDevices_xml - 2019.06.19 at 06h 42m 40s.xml">
+      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_twoDevices.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_oneDevice_xml - 2019.06.05 at 13h 14m 14s.xml">
-      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_oneDevice.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_twoDevices_xml - 2019.06.19 at 06h 50m 32s.xml">
+      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_twoDevices.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_oneDevice_xml - 2019.06.05 at 13h 16m 34s.xml">
-      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_oneDevice.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_twoDevices_xml - 2019.06.19 at 09h 15m 28s.xml">
+      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_twoDevices.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_oneDevice_xml_(1) - 2019.06.05 at 13h 18m 57s.xml">
-      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_oneDevice.xml (1)" configurationId="TestNG" />
+    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_twoDevices_xml - 2019.06.19 at 09h 26m 15s.xml">
+      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_twoDevices.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_oneDevice_xml - 2019.06.05 at 13h 21m 09s.xml">
-      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_oneDevice.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_twoDevices_xml - 2019.06.19 at 09h 51m 57s.xml">
+      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_twoDevices.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_oneDevice_xml - 2019.06.05 at 13h 22m 49s.xml">
-      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_oneDevice.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_twoDevices_xml - 2019.06.19 at 09h 58m 25s.xml">
+      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_twoDevices.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_oneDevice_xml - 2019.06.05 at 13h 34m 38s.xml">
-      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_oneDevice.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_twoDevices_xml - 2019.06.19 at 10h 08m 34s.xml">
+      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_twoDevices.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_oneDevice_xml - 2019.06.05 at 13h 47m 08s.xml">
-      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_oneDevice.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_twoDevices_xml - 2019.06.19 at 14h 07m 21s.xml">
+      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_twoDevices.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_oneDevice_xml - 2019.06.05 at 13h 48m 30s.xml">
-      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_oneDevice.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_twoDevices_xml - 2019.06.19 at 14h 31m 05s.xml">
+      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_twoDevices.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_oneDevice_xml - 2019.06.05 at 13h 58m 38s.xml">
-      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_oneDevice.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_gordo_githubJA_e2e-test-automation-framework_src_test_testng_twoDevices_xml - 2019.06.19 at 14h 52m 59s.xml">
+      <configuration name="C:/Users/gordo/githubJA/e2e-test-automation-framework/src/test/testng_twoDevices.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="136" y="56" width="1493" height="947" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28784648" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32030705" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -414,16 +527,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33044422" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32063884" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995272" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.43336946" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3717514" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32917964" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32932165" />
-      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3299435" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -433,6 +546,35 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20309168" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3665628" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995272" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3717514" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32917964" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.32932165" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3299435" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -447,150 +589,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/3.141.59/8e9423038552821844ba5f7713cc4c1e6d9835b7/selenium-api-3.141.59-sources.jar!/org/openqa/selenium/By.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="440" selection-start-line="440" selection-end-line="440" />
-          <folding>
-            <element signature="e#4139#4140#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.appium/java-client/7.0.0/5cd04e3be460d8bb8636de93d2ec35a115e871b2/java-client-7.0.0-sources.jar!/io/appium/java_client/AppiumDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="151" selection-start-line="151" selection-end-line="151" />
-          <folding>
-            <element signature="e#6333#6334#0" expanded="true" />
-            <element signature="e#6378#6379#0" expanded="true" />
-            <element signature="e#6500#6501#0" expanded="true" />
-            <element signature="e#7262#7263#0" expanded="true" />
-            <element signature="e#7323#7324#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/25.0-jre/30ade485699e7782cc2369b0e5d3d8e0bfc317c/guava-25.0-jre-sources.jar!/com/google/common/collect/Hashing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#1721#1722#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/25.0-jre/30ade485699e7782cc2369b0e5d3d8e0bfc317c/guava-25.0-jre-sources.jar!/com/google/common/collect/AbstractMapEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/25.0-jre/30ade485699e7782cc2369b0e5d3d8e0bfc317c/guava-25.0-jre-sources.jar!/com/google/common/collect/ImmutableEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/25.0-jre/30ade485699e7782cc2369b0e5d3d8e0bfc317c/guava-25.0-jre-sources.jar!/com/google/common/collect/ImmutableMapEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="e#1835#1836#0" expanded="true" />
-            <element signature="e#1879#1880#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/25.0-jre/30ade485699e7782cc2369b0e5d3d8e0bfc317c/guava-25.0-jre-sources.jar!/com/google/common/collect/RegularImmutableMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.appium/java-client/7.0.0/5cd04e3be460d8bb8636de93d2ec35a115e871b2/java-client-7.0.0-sources.jar!/io/appium/java_client/DefaultGenericMobileDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#1792#1793#0" expanded="true" />
-            <element signature="e#1837#1838#0" expanded="true" />
-            <element signature="e#1904#1905#0" expanded="true" />
-            <element signature="e#1956#1957#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.appium/java-client/7.0.0/5cd04e3be460d8bb8636de93d2ec35a115e871b2/java-client-7.0.0-sources.jar!/io/appium/java_client/remote/AppiumW3CHttpCommandCodec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/3.141.59/8950c1557ead2cdba4fdb9ba6f107dce3b5f1520/selenium-remote-driver-3.141.59-sources.jar!/org/openqa/selenium/remote/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#1424#1425#0" expanded="true" />
-            <element signature="e#1453#1454#0" expanded="true" />
-            <element signature="e#1474#1475#0" expanded="true" />
-            <element signature="e#1517#1518#0" expanded="true" />
-            <element signature="e#1544#1545#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/25.0-jre/30ade485699e7782cc2369b0e5d3d8e0bfc317c/guava-25.0-jre-sources.jar!/com/google/common/collect/UnmodifiableIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/25.0-jre/30ade485699e7782cc2369b0e5d3d8e0bfc317c/guava-25.0-jre-sources.jar!/com/google/common/collect/UnmodifiableListIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/25.0-jre/30ade485699e7782cc2369b0e5d3d8e0bfc317c/guava-25.0-jre-sources.jar!/com/google/common/collect/RegularImmutableList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/25.0-jre/30ade485699e7782cc2369b0e5d3d8e0bfc317c/guava-25.0-jre-sources.jar!/com/google/common/collect/ImmutableList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="383" selection-start-line="383" selection-end-line="383" />
-          <folding>
-            <element signature="e#13981#13982#0" expanded="true" />
-            <element signature="e#14048#14049#0" expanded="true" />
-            <element signature="e#14080#14081#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/3.141.59/8950c1557ead2cdba4fdb9ba6f107dce3b5f1520/selenium-remote-driver-3.141.59-sources.jar!/org/openqa/selenium/remote/SessionId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#1277#1278#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/25.0-jre/30ade485699e7782cc2369b0e5d3d8e0bfc317c/guava-25.0-jre-sources.jar!/com/google/common/collect/Iterators.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -775,43 +773,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/AuthSignupPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/AuthLoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="53" column="57" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/helpFunctions/HelpFunctions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/test-results/test/TEST-com.automation.testCases.Login.LoginFromStartViewTest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="159" selection-start-line="8" selection-start-column="159" selection-end-line="8" selection-end-column="159" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/AuthSignupPage.java" />
+    <entry file="file://$PROJECT_DIR$/build/test-results/test/TEST-com.automation.testCases.Login.LoginFromStartViewTest.xml" />
     <entry file="file://$USER_HOME$/Downloads/app-debug-dev32182.apk">
       <provider selected="true" editor-type-id="apk-viewer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/config/BuildAppiumServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -829,26 +794,136 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        <state relative-caret-position="102">
+          <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/config/BaseTest.java">
+    <entry file="file://$PROJECT_DIR$/build/testngOutput/All tests/Android device 1.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/helpFunctions/HelpFunctions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        <state relative-caret-position="196">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/testCases/Login/EmailLoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.appium/java-client/7.0.0/5cd04e3be460d8bb8636de93d2ec35a115e871b2/java-client-7.0.0-sources.jar!/io/appium/java_client/service/local/AppiumServiceBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="96" column="11" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/testCases/Signup/EmailSignupTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/QuestionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/PatientOnboardingPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/PatientMobileShowProfileSettingsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/PatientMobileShowProfilePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/PatientMobileMainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/PatientCreateAccountPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="24" />
           <folding>
-            <element signature="e#1238#1239#0" expanded="true" />
-            <element signature="e#1273#1274#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/GdprPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/DebugPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/AuthLoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/StartPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/TherapistStartPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="119" column="5" lean-forward="true" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/pageObjects/ZipCodePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/config/WebDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+        <state relative-caret-position="203">
+          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -857,11 +932,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/config/EnvironmentConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/config/BuildAppiumServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/config/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -874,15 +960,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/testng_twoDevices.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="16" selection-end-column="53" />
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="25" selection-end-column="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/testng_oneDevice.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
+        <state relative-caret-position="153">
+          <caret line="9" column="73" lean-forward="true" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
         </state>
       </provider>
     </entry>

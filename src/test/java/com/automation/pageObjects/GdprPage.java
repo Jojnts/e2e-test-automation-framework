@@ -22,7 +22,7 @@ public class GdprPage {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    static final String  __continueButtonCss = "button.spinner-button";
+    private static final String  __continueButtonCss = "button.spinner-button";
     @FindBy(css = __continueButtonCss)
     private WebElement _continueButton;
 

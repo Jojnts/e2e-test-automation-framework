@@ -25,7 +25,7 @@ public class WebDriver {
     private static final Logger LOG = Logger.getLogger(WebDriver.class.getName());
     protected static Map<Object, Object> driverMap = Collections.synchronizedMap (new HashMap<>());
 
-    static final String _buttonListCss = ".registration__debug-settings-button";
+    private static final String _buttonDebugCss = "button.registration__debug-settings-button";
 
     protected AuthLoginPage authLoginPage;
     protected DebugPage debugPage;
@@ -67,11 +67,11 @@ public class WebDriver {
          driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
          driverMap.put(deviceId, driver);
          initiateInstances(driver);
-         boolean found = waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _buttonListCss , 0);
+         boolean found = waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _buttonDebugCss , 0);
          if(found) {
              waitForNextViewToBeLoaded(4000);
          } else {
-             throw new NotFoundException("The Page Object not found in the startup of the test");
+             throw new NotFoundException("The debugButton was not found in the startup for the first test!");
          }
         LOG.info("Created driver to RETURN : " + deviceId);
         return driver;

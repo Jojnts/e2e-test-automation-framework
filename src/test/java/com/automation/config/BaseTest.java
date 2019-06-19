@@ -24,7 +24,6 @@ public class BaseTest extends WebDriver {
         }
     }
 
-
     @Parameters({"UDID_", "PLATFORM_VERSION_", "PLATFORM_", "APPIUM_PORT_"})
     @BeforeClass(alwaysRun = true)
     public void setup(final String UDID_, final String PLATFORM_VERSION_, final String PLATFORM_, final String APPIUM_PORT_) {
@@ -37,7 +36,7 @@ public class BaseTest extends WebDriver {
     }
 
     @Parameters( "APPIUM_PORT_" )
-    @AfterTest(alwaysRun = true)
+    @AfterSuite(alwaysRun = true)
     public void stopAppiumServers( final String APPIUM_PORT_ ) {
         BuildAppiumServer appiumServer = new BuildAppiumServer();
         appiumServer.stopServer(appiumServerUrl(), APPIUM_PORT_);

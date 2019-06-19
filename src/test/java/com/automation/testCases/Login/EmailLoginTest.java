@@ -25,7 +25,6 @@ public class EmailLoginTest extends BaseTest {
     public Object[][] getData() {
         return new Object[][] {
                 {"SE", "Dren@email.com", "test"},
-                {"SE", "test@email.com", "abcabc"},
                 {"SE", "test@emailcom", " "}
         };
     }

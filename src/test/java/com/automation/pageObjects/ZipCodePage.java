@@ -21,11 +21,11 @@ public class ZipCodePage {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    static final String  _zipCodeCss = "input[name='zip_code']";
+    private static final String  _zipCodeCss = "input[name='zip_code']";
     @FindBy(css = _zipCodeCss)
     private WebElement _zipCode;
 
-    static final String  _inputNameHeaderCss = "div.zipcode__input-title";
+    private static final String  _inputNameHeaderCss = "div.zipcode__input-title";
     @FindBy(css = _inputNameHeaderCss)
     private WebElement _inputNameHeader;
 

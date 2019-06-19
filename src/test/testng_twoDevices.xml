@@ -6,7 +6,13 @@
         <parameter name="APPIUM_PORT_" value="5100"/>
         <parameter name="PLATFORM_" value="Android"/>
         <classes>
-            <class name="com.automation.testCases.Signup.EmailSignupTest"/>
+            <class name="com.automation.testCases.Signup.EmailSignupTest">
+                <methods>
+                    <include name="withInviteSignUpAndDectivateAccountInNorway" />
+                    <include name="sendInviteAsTherapistInNorway" />
+                    <include name="createAccountInTheSignupFlowAndThenDeactivateTheAccount" />
+                </methods>
+            </class>
             <class name="com.automation.testCases.Login.EmailLoginTest"/>
         </classes>
     </test>

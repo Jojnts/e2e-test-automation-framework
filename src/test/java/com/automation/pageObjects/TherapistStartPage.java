@@ -2,14 +2,15 @@ package com.automation.pageObjects;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.Capabilities;
 
 import java.util.List;
 import java.util.logging.Logger;
+import java.util.regex.Pattern;
 
 import static com.automation.helpFunctions.HelpFunctions.waitForNextViewToBeLoaded;
 import static com.automation.helpFunctions.HelpFunctions.waitForThePageObjectToBeLoadedToFindTheWebElement;
@@ -17,7 +18,8 @@ import static com.automation.helpFunctions.HelpFunctions.waitForThePageObjectToB
 
 public class TherapistStartPage {
     private static final Logger LOG = Logger.getLogger(TherapistStartPage.class.getName());
-
+    private String therapistFirstName;
+    private String therapistLastName;
     protected AppiumDriver driver;
 
     public TherapistStartPage(final AppiumDriver driver) {
@@ -25,33 +27,34 @@ public class TherapistStartPage {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    static final String  _topNavListCss = "li.app-nav__item";
+    public String getTherapistFirstName () { return this.therapistFirstName; }
+
+    public String getTherapistLastName () {
+        return this.therapistLastName;
+    }
+
+    private static final String  _topNavListCss = "li.app-nav__item";
     @FindBy(css = _topNavListCss)
     public List<WebElement> _topNavList;
 
-    static final String  _inviteCss = ".patient-list__invite-link";
+    private static final String  _inviteCss = ".patient-list__invite-link";
     @FindBy(css = _inviteCss)
     public WebElement _invite;
 
-    static final String  _textInputListCss = ".margin-bottom-tiny";
+    private static final String  _textInputListCss = ".margin-bottom-tiny";
     @FindBy(css = _textInputListCss)
     public List<WebElement> _textInputList;
 
-    static final String  _headerCss = "div.fullscreen-header__title";
+    private static final String  _headerCss = "div.fullscreen-header__title";
     @FindBy(css = _headerCss)
     public WebElement _header;
 
     @FindBy (css = "button.button.invite-user__button")
     public List<WebElement> _inviteButton;
 
-
-    static final String  _dropDownMenuCss = "div.app-nav__dropdown";
-    @FindBy(css = _dropDownMenuCss)
-    public WebElement _dropDownMenu;
-
-    static final String  _logoutCss = ".app-nav__link";
-    @FindBy(css = _logoutCss)
-    public List<WebElement> _logout;
+    private static final String _dropDownMenuChoicesCss = ".app-nav__link";
+    @FindBy(css = _dropDownMenuChoicesCss)
+    public List<WebElement> _dropDownMenuChoices;
 
     private void navigateToPatient(final AppiumDriver driver) {
         LOG.info("Navigate to patient tab");
@@ -63,18 +66,28 @@ public class TherapistStartPage {
         }
     }
 
+    private void getTheTherapistName() {
+        Therapist therapist = new Therapist();
+        String[] names =  therapist.getTherapistName();
+        this.therapistFirstName =  names[0];
+        this.therapistLastName = names[1];
+    }
+
     public void sendAnInviteToPatientAndLogout(final AppiumDriver driver, String firstName, String lastName, String userEmail) {
+        clickDropDownMenu();
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _dropDownMenuChoicesCss, 3);
+        LOG.info(" te size of div.app-nav__dropdown " + _dropDownMenuChoices.size()); //There are for now seven elements
+        _dropDownMenuChoices.get(0).click();
+        getTheTherapistName();
         navigateToPatient(driver);
         LOG.info("Sen invitation to a patient");
         boolean found = waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _inviteCss, 10);
         if (found) {
             _invite.click();
         } else {
-            throw new ElementNotVisibleException("The dorpdown menu was not found");
+            throw new ElementNotVisibleException("The invite button was not found");
         }
         waitForNextViewToBeLoaded(1000);
-        //_header.click();
-
         _textInputList.get(3).sendKeys(firstName);
         _textInputList.get(4).sendKeys(lastName);
         Capabilities cap = driver.getCapabilities();
@@ -84,17 +97,37 @@ public class TherapistStartPage {
         LOG.info(" te size of invote buttons " + _inviteButton.size());
         _inviteButton.get(1).click();
         int coumnter = 0;
-        while ( coumnter < 2) { //a bugg in the app, nned to click twise
+        while ( coumnter < 2) { //a bugg in the app, need to click twise
             coumnter++;
-            waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _dropDownMenuCss, 10);
-            _dropDownMenu.click();
-            waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _dropDownMenuCss, 5);
-            LOG.info(" te size of div.app-nav__dropdown " + _logout.size());
-            //_logout.get(1).click();
-            //_logout.get(3).click();
-            _logout.get(4).click();
-            //_logout.get(5).click();
-            //_logout.get(6).click();
+            clickDropDownMenu();
+            waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _dropDownMenuChoicesCss, 5);
+            LOG.info(" te size of div.app-nav__dropdown " + _dropDownMenuChoices.size()); //There are for now seven elements
+            _dropDownMenuChoices.get(4).click();
+        }
+    }
+
+    private static final String  _myNameCss = "h3.profile-header__full-name";
+    @FindBy(css = _myNameCss)
+    public WebElement _myName;
+
+    private static final String  _dropDownMenuCss = "div.app-nav__dropdown";
+    @FindBy(css = _dropDownMenuCss)
+    public WebElement _dropDownMenu;
+
+    private void clickDropDownMenu() {
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _dropDownMenuCss, 10);
+        _dropDownMenu.click();
+    }
+
+    private class Therapist {
+        private String[] getTherapistName() {
+            LOG.info("Get the name of the Therapist");
+            waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _myNameCss, 5);
+            LOG.info("Therapist name " + _myName.getText());
+            String regex = "\\s";
+            Pattern pattern = Pattern.compile(regex);
+            String[] result = pattern.split(_myName.getText());
+            return result;
         }
     }
 }

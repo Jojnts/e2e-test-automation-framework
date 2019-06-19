@@ -3,7 +3,7 @@
     <test name="Android device 1">
         <parameter name="PLATFORM_VERSION_" value="6.0"/>
         <parameter name="UDID_" value="52RBB18123202825"/>
-        <parameter name="APPIUM_PORT_" value="5200"/>
+        <parameter name="APPIUM_PORT_" value="5100"/>
         <parameter name="PLATFORM_" value="Android"/>
         <classes>
             <class name="com.automation.testCases.Signup.EmailSignupTest"/>

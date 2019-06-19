@@ -22,11 +22,11 @@ public class PatientMobileMainPage {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    static final String _showProfileButtonCss = "div.app-top-bar__profile";
+    private static final String _showProfileButtonCss = "div.app-top-bar__profile";
     @FindBy(css = _showProfileButtonCss)
     private WebElement _showProfileButton;
 
-    static final String _talkToPhysiotherapistButtonCss = "button.button.button--outlined-white";
+    private static final String _talkToPhysiotherapistButtonCss = "button.button.button--outlined-white";
     @FindBy(css = _talkToPhysiotherapistButtonCss)
     private WebElement _talkToPhysiotherapistButton;
 

@@ -9,12 +9,15 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 import java.util.logging.Logger;
+import java.util.regex.Pattern;
 
 import static com.automation.helpFunctions.HelpFunctions.waitForNextViewToBeLoaded;
 import static com.automation.helpFunctions.HelpFunctions.waitForThePageObjectToBeLoadedToFindTheWebElement;
 
 public class QuestionPage {
     private static final Logger LOG = Logger.getLogger(QuestionPage.class.getName());
+    private String therapistFirstName = "init";
+    private String therapistLastName = "init";
 
     protected AppiumDriver driver;
 
@@ -23,7 +26,12 @@ public class QuestionPage {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    static final String  _continueQuestionsCss = "button.button.therapist-intro__button";
+    public String getTherapistFirstName() { return therapistFirstName; }
+
+    public String getTherapistLastName() { return therapistLastName; }
+
+
+    private static final String  _continueQuestionsCss = "button.button.therapist-intro__button";
     @FindBy(css = _continueQuestionsCss)
     private WebElement _therapistButton;
 
@@ -51,25 +59,35 @@ public class QuestionPage {
     @FindBy(css = "div#suggestion-radio_1")
     private WebElement _timeForMeetingYes;
 
-    static final String _meetingFinnishButtonCss = "button.spinner-button";
+    private static final String _meetingFinnishButtonCss = "button.spinner-button";
     @FindBy(css = _meetingFinnishButtonCss)
     private List<WebElement> _meetingFinnishButton;
 
-    static final String _registrationFinnishedButtonCss = "button.button.suggestion-done__button";
+    private static final String _registrationFinnishedButtonCss = "button.button.suggestion-done__button";
     @FindBy(css = _registrationFinnishedButtonCss)
     private WebElement _registrationFinnishedButton;
 
-    static final String _textAreaCommentCss = "textarea#comment";
+    private static final String _textAreaCommentCss = "textarea#comment";
     @FindBy(css = _textAreaCommentCss)
     private WebElement _textAreaComment;
 
-    static final String _thanksFromTherapistCss = "button.button.therapist-outro__button";
+    private static final String _thanksFromTherapistCss = "button.button.therapist-outro__button";
     @FindBy(css = _thanksFromTherapistCss)
     private WebElement _thanksFromTherapist;
 
+    private void getTheNameOfTheTherapist() {
+        Therapist therapist = new Therapist();
+        String[] names =  therapist.getTherapistName();
+        this.therapistFirstName =  names[0];
+        this.therapistLastName = names[1];
+    }
+
+
     public void startTheQuestionary(final AppiumDriver driver, String countryCode) {
+
         LOG.info("Start the question flow");
         waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _continueQuestionsCss, 0);
+        getTheNameOfTheTherapist();
         _therapistButton.click();
         waitForNextViewToBeLoaded(1500);
         _leftHip.click();
@@ -105,15 +123,16 @@ public class QuestionPage {
         _timeForMeetingYes.click();
         _textAreaComment.sendKeys("About two weeks from now is okay. ");
         driver.hideKeyboard();
-        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _thanksFromTherapistCss, 4);
-        _thanksFromTherapist.click();
+        boolean found = waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _thanksFromTherapistCss, 3);
+        if(found) { //this is for old Huawei tablet, in the automation it goes back one page
+            _thanksFromTherapist.click();
+        }        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _meetingFinnishButtonCss, 3);
         LOG.info("Size of _meetingFinnishButton " + _meetingFinnishButton.size());
         _meetingFinnishButton.get(0).click();
-        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _registrationFinnishedButtonCss, 10);
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _registrationFinnishedButtonCss, 5);
         _registrationFinnishedButton.click();
-        waitForNextViewToBeLoaded(3500);
+        waitForNextViewToBeLoaded(2500);
     }
-
 
     @FindBy(css = "select[name='year']")
     private WebElement _yearList;
@@ -146,7 +165,6 @@ public class QuestionPage {
         _continueButton.click();
         waitForNextViewToBeLoaded(2000);
     }
-
 
     @FindBy(css = "input[name='weight']")
     private WebElement _weight;
@@ -193,5 +211,22 @@ public class QuestionPage {
         waitForNextViewToBeLoaded(1000);
         _nextButton.click();
         waitForNextViewToBeLoaded(2000);
+    }
+
+    private static final String _namesCss = "div.therapist-intro__name";
+    @FindBy(css = _namesCss)
+    private WebElement _names;
+
+    private class Therapist {
+        private String[] getTherapistName() {
+            LOG.info("Get the name of the Therapist");
+            waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _namesCss, 5);
+            LOG.info("Therapist name " + _names.getText() + "  " + _names.getTagName());
+            String regex = "\\s";
+            Pattern pattern = Pattern.compile(regex);
+            String[] result = pattern.split(_names.getText());
+            return result;
+
+        }
     }
 }

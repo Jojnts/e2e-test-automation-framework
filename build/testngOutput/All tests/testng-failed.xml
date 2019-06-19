@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All tests]" parallel="tests">
+  <test name="Android device 1(failed)" parallel="tests">
+    <parameter name="PLATFORM_VERSION_" value="7.1.1"/>
+    <parameter name="UDID_" value="emulator-5554"/>
+    <parameter name="APPIUM_PORT_" value="5100"/>
+    <parameter name="PLATFORM_" value="Android"/>
+    <classes>
+      <class name="com.automation.testCases.Signup.EmailSignupTest">
+        <methods>
+          <include name="sendInviteAsTherapistInNorway"/>
+          <include name="createAccountInTheSignupFlowAndThenDeactivateTheAccount" invocation-numbers="0 1 2"/>
+          <include name="withInviteSignUpAndDectivateAccountInNorway" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="stopAppiumServers"/>
+          <include name="stopAppiumServers"/>
+          <include name="startAppiumServers"/>
+          <include name="startAppiumServers"/>
+        </methods>
+      </class> <!-- com.automation.testCases.Signup.EmailSignupTest -->
+      <class name="com.automation.testCases.Login.EmailLoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="fromStartpageLoginWithWrongCredentialSE"/>
+          <include name="fromStartpageLoginWitDdifferentWrongCredential"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.automation.testCases.Login.EmailLoginTest -->
+    </classes>
+  </test> <!-- Android device 1(failed) -->
+  <test name="Android device 2(failed)" parallel="tests">
+    <parameter name="PLATFORM_VERSION_" value="6.0"/>
+    <parameter name="UDID_" value="52RBB18123202825"/>
+    <parameter name="APPIUM_PORT_" value="5200"/>
+    <parameter name="PLATFORM_" value="Android"/>
+    <classes>
+      <class name="com.automation.testCases.Signup.EmailSignupTest">
+        <methods>
+          <include name="sendInviteAsTherapistInNorway"/>
+          <include name="withInviteSignUpAndDectivateAccountInNorway" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="stopAppiumServers"/>
+          <include name="stopAppiumServers"/>
+          <include name="startAppiumServers"/>
+          <include name="startAppiumServers"/>
+        </methods>
+      </class> <!-- com.automation.testCases.Signup.EmailSignupTest -->
+      <class name="com.automation.testCases.Login.EmailLoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="fromStartpageLoginWithWrongCredentialSE"/>
+          <include name="fromStartpageLoginWitDdifferentWrongCredential"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.automation.testCases.Login.EmailLoginTest -->
+    </classes>
+  </test> <!-- Android device 2(failed) -->
+</suite> <!-- Failed suite [All tests] -->

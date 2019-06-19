@@ -21,7 +21,7 @@ public abstract class HelpFunctions {
     public static boolean isTheFoundElementDisplayed(final AppiumDriver driver, String css ) {
         String device = driver.getCapabilities().getCapability("deviceName").toString();
         int counter = 0;
-        int timeLimit = 10;
+        int timeLimit = 35;
 
         while (counter < timeLimit) {
             LOG.info(" Is the element displayed " + css + " on device " + device + " loop nr " + counter);

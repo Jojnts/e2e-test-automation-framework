@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.automation.testCases.Signup.EmailSignupTest" tests="10" skipped="0" failures="5" errors="0" timestamp="2019-06-18T06:08:11" hostname="DESKTOP-CCGNHEN" time="528.134">
+  <properties/>
+  <testcase name="createAccountInTheSignupFlowAndThenDeactivateTheAccount[0](SE, Testse, test, Testse.test@testse.com, 12345678)" classname="com.automation.testCases.Signup.EmailSignupTest" time="90.776">
+    <failure message="org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.cssSelector: button.button.therapist-outro__button" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.cssSelector: button.button.therapist-outro__button
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
+	at com.automation.pageObjects.QuestionPage.startTheQuestionary(QuestionPage.java:115)
+	at com.automation.testCases.Signup.EmailSignupTest.createAccountInTheSignupFlowAndThenDeactivateTheAccount(EmailSignupTest.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@4a9d4cc5 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 24 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;button.button.therapist-outro__button&quot;}
+  (Session info: chrome=55.0.2883.91)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 10.0.17763 x86_64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CCGNHEN', ip: '192.168.106.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .MainActivity, appPackage: ai.arthro.jointacademy_stage, autoWebview: true, chromedriverExecutableDir: C:\Users\gordo\githubJA\e2e..., databaseEnabled: false, desired: {appActivity: .MainActivity, appPackage: ai.arthro.jointacademy_stage, autoWebview: true, chromedriverExecutableDir: C:\Users\gordo\githubJA\e2e..., deviceName: emulator-5554, newCommandTimeout: 50, noReset: false, platformName: android, platformVersion: 7.1.1, udid: emulator-5554}, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 50, noReset: false, platform: LINUX, platformName: Android, platformVersion: 7.1.1, takesScreenshot: true, udid: emulator-5554, warnings: {}, webStorageEnabled: false}
+Session ID: 8ade0c49-928c-4fe4-8325-5c6576acd316
+*** Element info: {Using=css selector, value=button.button.therapist-outro__button}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByCssSelector(DefaultGenericMobileDriver.java:139)
+	at io.appium.java_client.AppiumDriver.findElementByCssSelector(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByCssSelector(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 26 more
+</failure>
+  </testcase>
+  <testcase name="createAccountInTheSignupFlowAndThenDeactivateTheAccount[0](SE, Testse, test, Testse.test@testse.com, 12345678)" classname="com.automation.testCases.Signup.EmailSignupTest" time="120.672"/>
+  <testcase name="createAccountInTheSignupFlowAndThenDeactivateTheAccount[1](US, Testus, test, Testus.test@testus.com, 87654321)" classname="com.automation.testCases.Signup.EmailSignupTest" time="87.606">
+    <failure message="org.openqa.selenium.NotFoundException: Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-CCGNHEN', ip: '192.168.106.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NotFoundException">org.openqa.selenium.NotFoundException: Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CCGNHEN', ip: '192.168.106.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: unknown
+	at com.automation.pageObjects.StartPage.clickOnDebugButton(StartPage.java:36)
+	at com.automation.testCases.Signup.EmailSignupTest.createAccountInTheSignupFlowAndThenDeactivateTheAccount(EmailSignupTest.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <testcase name="createAccountInTheSignupFlowAndThenDeactivateTheAccount[2](NO, Testno, test, Testno.test@testno.com, 87654321)" classname="com.automation.testCases.Signup.EmailSignupTest" time="89.126">
+    <failure message="org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.cssSelector: button.button.therapist-outro__button" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.cssSelector: button.button.therapist-outro__button
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
+	at com.automation.pageObjects.QuestionPage.startTheQuestionary(QuestionPage.java:115)
+	at com.automation.testCases.Signup.EmailSignupTest.createAccountInTheSignupFlowAndThenDeactivateTheAccount(EmailSignupTest.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@4024e93d (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 24 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;button.button.therapist-outro__button&quot;}
+  (Session info: chrome=55.0.2883.91)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 10.0.17763 x86_64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CCGNHEN', ip: '192.168.106.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .MainActivity, appPackage: ai.arthro.jointacademy_stage, autoWebview: true, chromedriverExecutableDir: C:\Users\gordo\githubJA\e2e..., databaseEnabled: false, desired: {appActivity: .MainActivity, appPackage: ai.arthro.jointacademy_stage, autoWebview: true, chromedriverExecutableDir: C:\Users\gordo\githubJA\e2e..., deviceName: emulator-5554, newCommandTimeout: 50, noReset: false, platformName: android, platformVersion: 7.1.1, udid: emulator-5554}, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 50, noReset: false, platform: LINUX, platformName: Android, platformVersion: 7.1.1, takesScreenshot: true, udid: emulator-5554, warnings: {}, webStorageEnabled: false}
+Session ID: 8ade0c49-928c-4fe4-8325-5c6576acd316
+*** Element info: {Using=css selector, value=button.button.therapist-outro__button}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByCssSelector(DefaultGenericMobileDriver.java:139)
+	at io.appium.java_client.AppiumDriver.findElementByCssSelector(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByCssSelector(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 26 more
+</failure>
+  </testcase>
+  <testcase name="createAccountInTheSignupFlowAndThenDeactivateTheAccount[1](US, Testus, test, Testus.test@testus.com, 87654321)" classname="com.automation.testCases.Signup.EmailSignupTest" time="125.352"/>
+  <testcase name="sendInviteAsTherapistInNorway[0](NO, Sven, Svan, Sven.Svan@testno.no, 123123123)" classname="com.automation.testCases.Signup.EmailSignupTest" time="69.524"/>
+  <testcase name="createAccountInTheSignupFlowAndThenDeactivateTheAccount[2](NO, Testno, test, Testno.test@testno.com, 87654321)" classname="com.automation.testCases.Signup.EmailSignupTest" time="118.727"/>
+  <testcase name="sendInviteAsTherapistInNorway[0](NO, Sven, Svan, Sven.Svan@testno.no, 123123123)" classname="com.automation.testCases.Signup.EmailSignupTest" time="63.848"/>
+  <testcase name="withInviteSignUpAndDectivateAccountInNorway[0](NO, Sven, Svan, Sven.Svan@testno.no, 123123123)" classname="com.automation.testCases.Signup.EmailSignupTest" time="140.555">
+    <failure message="org.openqa.selenium.NotFoundException: Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-CCGNHEN', ip: '192.168.106.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NotFoundException">org.openqa.selenium.NotFoundException: Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CCGNHEN', ip: '192.168.106.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: unknown
+	at com.automation.pageObjects.StartPage.clickOnDebugButton(StartPage.java:36)
+	at com.automation.testCases.Signup.EmailSignupTest.withInviteSignUpAndDectivateAccountInNorway(EmailSignupTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <testcase name="withInviteSignUpAndDectivateAccountInNorway[0](NO, Sven, Svan, Sven.Svan@testno.no, 123123123)" classname="com.automation.testCases.Signup.EmailSignupTest" time="59.564">
+    <failure message="org.openqa.selenium.NotFoundException: Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-CCGNHEN', ip: '192.168.106.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NotFoundException">org.openqa.selenium.NotFoundException: Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CCGNHEN', ip: '192.168.106.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: unknown
+	at com.automation.pageObjects.StartPage.clickOnDebugButton(StartPage.java:36)
+	at com.automation.testCases.Signup.EmailSignupTest.withInviteSignUpAndDectivateAccountInNorway(EmailSignupTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jun 18, 2019 8:07:50 AM com.automation.config.EnvironmentConfig appiumServerUrl
+INFO: appiumIp is 127.0.0.1
+Jun 18, 2019 8:07:50 AM com.automation.config.WebDriver createOrReuseDriver
+INFO: CREATE driver for 52RBB18123202825
+Jun 18, 2019 8:07:50 AM com.automation.config.WebDriver getCapabilities
+INFO: Create DesiredCapabilities for device ID 52RBB18123202825
+Jun 18, 2019 8:07:50 AM com.automation.config.WebDriver createDriver
+INFO: -------Starts creating a driver for the device  52RBB18123202825 thread  Thread[TestNG,5,main]
+Jun 18, 2019 8:07:50 AM com.automation.config.EnvironmentConfig appiumServerUrl
+INFO: appiumIp is 127.0.0.1
+Jun 18, 2019 8:07:54 AM com.automation.config.WebDriver createOrReuseDriver
+INFO: CREATE driver for emulator-5554
+Jun 18, 2019 8:07:54 AM com.automation.config.WebDriver getCapabilities
+INFO: Create DesiredCapabilities for device ID emulator-5554
+Jun 18, 2019 8:07:54 AM com.automation.config.WebDriver createDriver
+INFO: -------Starts creating a driver for the device  emulator-5554 thread  Thread[TestNG,5,main]
+Jun 18, 2019 8:07:54 AM com.automation.config.EnvironmentConfig appiumServerUrl
+INFO: appiumIp is 127.0.0.1
+Jun 18, 2019 8:08:03 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+Jun 18, 2019 8:08:04 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:08:06 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element .registration__debug-settings-button
+Jun 18, 2019 8:08:06 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed .registration__debug-settings-button on device emulator-5554 loop nr 0
+Jun 18, 2019 8:08:11 AM com.automation.config.WebDriver createDriver
+INFO: Created driver to RETURN : emulator-5554
+Jun 18, 2019 8:08:11 AM com.automation.pageObjects.StartPage clickOnDebugButton
+INFO: Click Debug button
+Jun 18, 2019 8:08:11 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:08:13 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element button.registration__debug-settings-button
+Jun 18, 2019 8:08:13 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.registration__debug-settings-button on device emulator-5554 loop nr 0
+Jun 18, 2019 8:08:14 AM com.automation.pageObjects.DebugPage tapEmailSignupButton
+INFO: Tap on Email Signup button
+Jun 18, 2019 8:08:14 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:08:16 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element div.check-box__check
+Jun 18, 2019 8:08:16 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.check-box__check on device emulator-5554 loop nr 0
+Jun 18, 2019 8:08:18 AM com.automation.pageObjects.DebugPage clickToCheckTheDebugValuesAndSeRadioButton
+INFO: Select the debug check box
+Jun 18, 2019 8:08:22 AM com.automation.pageObjects.PatientCreateAccountPage fillInTheAccount
+INFO: Fill in the account tasks
+Jun 18, 2019 8:08:22 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:08:24 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element input[name='first_name']
+Jun 18, 2019 8:08:24 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed input[name='first_name'] on device emulator-5554 loop nr 0
+Jun 18, 2019 8:08:29 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+Jun 18, 2019 8:08:29 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:08:31 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element .registration__debug-settings-button
+Jun 18, 2019 8:08:31 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed .registration__debug-settings-button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:08:34 AM com.automation.pageObjects.GdprPage acceptGdpr
+INFO: Start the question flow
+Jun 18, 2019 8:08:34 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:08:36 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element button.spinner-button
+Jun 18, 2019 8:08:36 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.spinner-button on device emulator-5554 loop nr 0
+Jun 18, 2019 8:08:37 AM com.automation.config.WebDriver createDriver
+INFO: Created driver to RETURN : 52RBB18123202825
+Jun 18, 2019 8:08:37 AM com.automation.pageObjects.StartPage clickOnDebugButton
+INFO: Click Debug button
+Jun 18, 2019 8:08:37 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:08:39 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.registration__debug-settings-button
+Jun 18, 2019 8:08:39 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.registration__debug-settings-button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:08:41 AM com.automation.pageObjects.DebugPage tapEmailSignupButton
+INFO: Tap on Email Signup button
+Jun 18, 2019 8:08:41 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:08:43 AM com.automation.pageObjects.QuestionPage startTheQuestionary
+INFO: Start the question flow
+Jun 18, 2019 8:08:43 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:08:43 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element div.check-box__check
+Jun 18, 2019 8:08:43 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.check-box__check on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:08:44 AM com.automation.pageObjects.DebugPage clickToCheckTheDebugValuesAndSeRadioButton
+INFO: Select the debug check box
+Jun 18, 2019 8:08:45 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element button.button.therapist-intro__button
+Jun 18, 2019 8:08:45 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.button.therapist-intro__button on device emulator-5554 loop nr 0
+Jun 18, 2019 8:08:46 AM com.automation.pageObjects.QuestionPage fetchTherapistName
+INFO: Fetch the name of the Therapist
+Jun 18, 2019 8:08:46 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:08:48 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element div.therapist-intro__name
+Jun 18, 2019 8:08:48 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.therapist-intro__name on device emulator-5554 loop nr 0
+Jun 18, 2019 8:08:49 AM com.automation.pageObjects.QuestionPage fetchTherapistName
+INFO: Therapist name Anders Larsson  div
+Jun 18, 2019 8:08:50 AM com.automation.pageObjects.PatientCreateAccountPage fillInTheAccount
+INFO: Fill in the account tasks
+Jun 18, 2019 8:08:50 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:08:52 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element input[name='first_name']
+Jun 18, 2019 8:08:52 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed input[name='first_name'] on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:09:03 AM com.automation.pageObjects.GdprPage acceptGdpr
+INFO: Start the question flow
+Jun 18, 2019 8:09:03 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:09:05 AM com.automation.pageObjects.QuestionPage yearBirthDay
+INFO: In yearOption 1920
+Jun 18, 2019 8:09:05 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.spinner-button
+Jun 18, 2019 8:09:05 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.spinner-button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:09:11 AM com.automation.pageObjects.QuestionPage startTheQuestionary
+INFO: Start the question flow
+Jun 18, 2019 8:09:11 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:09:13 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.button.therapist-intro__button
+Jun 18, 2019 8:09:14 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.button.therapist-intro__button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:09:15 AM com.automation.pageObjects.QuestionPage fetchTherapistName
+INFO: Fetch the name of the Therapist
+Jun 18, 2019 8:09:15 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:09:17 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element div.therapist-intro__name
+Jun 18, 2019 8:09:17 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.therapist-intro__name on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:09:18 AM com.automation.pageObjects.QuestionPage fetchTherapistName
+INFO: Therapist name Anders Larsson  div
+Jun 18, 2019 8:09:19 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:09:21 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element button.button.therapist-outro__button
+Jun 18, 2019 8:09:21 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.button.therapist-outro__button on device emulator-5554 loop nr 0
+Jun 18, 2019 8:09:28 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:09:32 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element button.button.therapist-outro__button
+Jun 18, 2019 8:09:36 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 2 for element button.button.therapist-outro__button
+Jun 18, 2019 8:09:37 AM com.automation.pageObjects.QuestionPage yearBirthDay
+INFO: In yearOption 1920
+Jun 18, 2019 8:09:42 AM com.automation.pageObjects.StartPage clickOnDebugButton
+INFO: Click Debug button
+Jun 18, 2019 8:09:42 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:09:46 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element button.registration__debug-settings-button
+Jun 18, 2019 8:09:50 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 2 for element button.registration__debug-settings-button
+Jun 18, 2019 8:09:53 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:09:54 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 4 for element button.registration__debug-settings-button
+Jun 18, 2019 8:09:55 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.button.therapist-outro__button
+Jun 18, 2019 8:09:55 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.button.therapist-outro__button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:09:58 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 6 for element button.registration__debug-settings-button
+Jun 18, 2019 8:10:02 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 8 for element button.registration__debug-settings-button
+Jun 18, 2019 8:10:04 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:06 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 10 for element button.registration__debug-settings-button
+Jun 18, 2019 8:10:06 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.button.therapist-outro__button
+Jun 18, 2019 8:10:06 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.button.therapist-outro__button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:08 AM com.automation.pageObjects.QuestionPage startTheQuestionary
+INFO: Size of _meetingFinnishButton 1
+Jun 18, 2019 8:10:09 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:10 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 12 for element button.registration__debug-settings-button
+Jun 18, 2019 8:10:11 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.button.suggestion-done__button
+Jun 18, 2019 8:10:11 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.button.suggestion-done__button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:14 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 14 for element button.registration__debug-settings-button
+Jun 18, 2019 8:10:16 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:18 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 16 for element button.registration__debug-settings-button
+Jun 18, 2019 8:10:18 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element div.app-top-bar__profile
+Jun 18, 2019 8:10:18 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.app-top-bar__profile on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:19 AM com.automation.pageObjects.PatientMobileMainPage clickOkayToTalkWitPhysiotherapist
+INFO: click message from Therapist
+Jun 18, 2019 8:10:19 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:22 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.button.button--outlined-white
+Jun 18, 2019 8:10:22 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.button.button--outlined-white on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:22 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 18 for element button.registration__debug-settings-button
+Jun 18, 2019 8:10:23 AM com.automation.pageObjects.PatientMobileMainPage clickShowMyProfile
+INFO: Show my profile
+Jun 18, 2019 8:10:23 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:26 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element div.app-top-bar__profile
+Jun 18, 2019 8:10:26 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.app-top-bar__profile on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:26 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 20 for element button.registration__debug-settings-button
+Jun 18, 2019 8:10:28 AM com.automation.pageObjects.PatientMobileShowProfilePage clickOnMyAccountSettings
+INFO: Start to delete my account
+Jun 18, 2019 8:10:28 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:30 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.mobile-profile__item.mobile-profile__item--chevron
+Jun 18, 2019 8:10:30 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.mobile-profile__item.mobile-profile__item--chevron on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:30 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 22 for element button.registration__debug-settings-button
+Jun 18, 2019 8:10:32 AM com.automation.pageObjects.PatientMobileShowProfileSettingsPage deleteMyAccount
+INFO: Start to delete my account
+Jun 18, 2019 8:10:32 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:34 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element icon-link.icon-link--delete
+Jun 18, 2019 8:10:34 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed icon-link.icon-link--delete on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:34 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 24 for element button.registration__debug-settings-button
+Jun 18, 2019 8:10:37 AM com.automation.pageObjects.StartPage clickOnDebugButton
+INFO: Click Debug button
+Jun 18, 2019 8:10:37 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:38 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 26 for element button.registration__debug-settings-button
+Jun 18, 2019 8:10:39 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.registration__debug-settings-button
+Jun 18, 2019 8:10:39 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.registration__debug-settings-button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:42 AM com.automation.pageObjects.DebugPage tapEmailSignupButton
+INFO: Tap on Email Signup button
+Jun 18, 2019 8:10:42 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:42 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 28 for element button.registration__debug-settings-button
+Jun 18, 2019 8:10:44 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element div.check-box__check
+Jun 18, 2019 8:10:44 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.check-box__check on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:45 AM com.automation.pageObjects.DebugPage clickToCheckTheDebugValuesAndSeRadioButton
+INFO: Select the debug check box
+Jun 18, 2019 8:10:47 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 30 for element button.registration__debug-settings-button
+Jun 18, 2019 8:10:51 AM com.automation.pageObjects.ZipCodePage enterTheZipCode
+INFO: Enter the zip code
+Jun 18, 2019 8:10:51 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:52 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 32 for element button.registration__debug-settings-button
+Jun 18, 2019 8:10:53 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element input[name='zip_code']
+Jun 18, 2019 8:10:53 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed input[name='zip_code'] on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:56 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 34 for element button.registration__debug-settings-button
+Jun 18, 2019 8:10:57 AM com.automation.pageObjects.PatientCreateAccountPage fillInTheAccount
+INFO: Fill in the account tasks
+Jun 18, 2019 8:10:57 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:10:59 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element input[name='first_name']
+Jun 18, 2019 8:10:59 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed input[name='first_name'] on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:11:01 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 36 for element button.registration__debug-settings-button
+Jun 18, 2019 8:11:05 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 38 for element button.registration__debug-settings-button
+Jun 18, 2019 8:11:09 AM com.automation.pageObjects.StartPage clickOnDebugButton
+INFO: Click Debug button
+Jun 18, 2019 8:11:09 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:11:09 AM com.automation.pageObjects.GdprPage acceptGdpr
+INFO: Start the question flow
+Jun 18, 2019 8:11:09 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:11:11 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element button.registration__debug-settings-button
+Jun 18, 2019 8:11:11 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.registration__debug-settings-button on device emulator-5554 loop nr 0
+Jun 18, 2019 8:11:11 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.spinner-button
+Jun 18, 2019 8:11:12 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.spinner-button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:11:13 AM com.automation.pageObjects.DebugPage tapEmailSignupButton
+INFO: Tap on Email Signup button
+Jun 18, 2019 8:11:13 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:11:15 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element div.check-box__check
+Jun 18, 2019 8:11:15 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.check-box__check on device emulator-5554 loop nr 0
+Jun 18, 2019 8:11:16 AM com.automation.pageObjects.DebugPage clickToCheckTheDebugValuesAndSeRadioButton
+INFO: Select the debug check box
+Jun 18, 2019 8:11:18 AM com.automation.pageObjects.QuestionPage startTheQuestionary
+INFO: Start the question flow
+Jun 18, 2019 8:11:18 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:11:20 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.button.therapist-intro__button
+Jun 18, 2019 8:11:20 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.button.therapist-intro__button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:11:20 AM com.automation.pageObjects.PatientCreateAccountPage fillInTheAccount
+INFO: Fill in the account tasks
+Jun 18, 2019 8:11:20 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:11:21 AM com.automation.pageObjects.QuestionPage fetchTherapistName
+INFO: Fetch the name of the Therapist
+Jun 18, 2019 8:11:21 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:11:22 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element input[name='first_name']
+Jun 18, 2019 8:11:23 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed input[name='first_name'] on device emulator-5554 loop nr 0
+Jun 18, 2019 8:11:23 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element div.therapist-intro__name
+Jun 18, 2019 8:11:23 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.therapist-intro__name on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:11:25 AM com.automation.pageObjects.QuestionPage fetchTherapistName
+INFO: Therapist name Anders Larsson  div
+Jun 18, 2019 8:11:32 AM com.automation.pageObjects.GdprPage acceptGdpr
+INFO: Start the question flow
+Jun 18, 2019 8:11:32 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:11:34 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element button.spinner-button
+Jun 18, 2019 8:11:34 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.spinner-button on device emulator-5554 loop nr 0
+Jun 18, 2019 8:11:40 AM com.automation.pageObjects.QuestionPage startTheQuestionary
+INFO: Start the question flow
+Jun 18, 2019 8:11:40 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:11:42 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element button.button.therapist-intro__button
+Jun 18, 2019 8:11:42 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.button.therapist-intro__button on device emulator-5554 loop nr 0
+Jun 18, 2019 8:11:43 AM com.automation.pageObjects.QuestionPage yearBirthDay
+INFO: In yearOption 1920
+Jun 18, 2019 8:11:43 AM com.automation.pageObjects.QuestionPage fetchTherapistName
+INFO: Fetch the name of the Therapist
+Jun 18, 2019 8:11:43 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:11:45 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element div.therapist-intro__name
+Jun 18, 2019 8:11:45 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.therapist-intro__name on device emulator-5554 loop nr 0
+Jun 18, 2019 8:11:47 AM com.automation.pageObjects.QuestionPage fetchTherapistName
+INFO: Therapist name Anders Larsson  div
+Jun 18, 2019 8:11:59 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:01 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.button.therapist-outro__button
+Jun 18, 2019 8:12:01 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.button.therapist-outro__button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:02 AM com.automation.pageObjects.QuestionPage yearBirthDay
+INFO: In yearOption 1920
+Jun 18, 2019 8:12:09 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:11 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.button.therapist-outro__button
+Jun 18, 2019 8:12:11 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.button.therapist-outro__button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:13 AM com.automation.pageObjects.QuestionPage startTheQuestionary
+INFO: Size of _meetingFinnishButton 1
+Jun 18, 2019 8:12:14 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:16 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.button.suggestion-done__button
+Jun 18, 2019 8:12:16 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:12:16 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.button.suggestion-done__button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:18 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element button.button.therapist-outro__button
+Jun 18, 2019 8:12:18 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.button.therapist-outro__button on device emulator-5554 loop nr 0
+Jun 18, 2019 8:12:21 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:23 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element div.app-top-bar__profile
+Jun 18, 2019 8:12:24 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.app-top-bar__profile on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:24 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:12:25 AM com.automation.pageObjects.PatientMobileMainPage clickOkayToTalkWitPhysiotherapist
+INFO: click message from Therapist
+Jun 18, 2019 8:12:25 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:27 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.button.button--outlined-white
+Jun 18, 2019 8:12:27 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.button.button--outlined-white on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:28 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element button.button.therapist-outro__button
+Jun 18, 2019 8:12:29 AM com.automation.pageObjects.PatientMobileMainPage clickShowMyProfile
+INFO: Show my profile
+Jun 18, 2019 8:12:29 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:31 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element div.app-top-bar__profile
+Jun 18, 2019 8:12:31 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.app-top-bar__profile on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:32 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 2 for element button.button.therapist-outro__button
+Jun 18, 2019 8:12:33 AM com.automation.pageObjects.PatientMobileShowProfilePage clickOnMyAccountSettings
+INFO: Start to delete my account
+Jun 18, 2019 8:12:33 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:35 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.mobile-profile__item.mobile-profile__item--chevron
+Jun 18, 2019 8:12:35 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.mobile-profile__item.mobile-profile__item--chevron on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:37 AM com.automation.pageObjects.PatientMobileShowProfileSettingsPage deleteMyAccount
+INFO: Start to delete my account
+Jun 18, 2019 8:12:37 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:38 AM com.automation.pageObjects.StartPage clickOnDebugButton
+INFO: Click Debug button
+Jun 18, 2019 8:12:38 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:12:39 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element icon-link.icon-link--delete
+Jun 18, 2019 8:12:39 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed icon-link.icon-link--delete on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:43 AM com.automation.pageObjects.StartPage clickOnDebugButton
+INFO: Click Debug button
+Jun 18, 2019 8:12:43 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:44 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element button.registration__debug-settings-button
+Jun 18, 2019 8:12:45 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.registration__debug-settings-button
+Jun 18, 2019 8:12:45 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.registration__debug-settings-button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:47 AM com.automation.pageObjects.DebugPage tapEmailSignupButton
+INFO: Tap on Email Signup button
+Jun 18, 2019 8:12:47 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:48 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 2 for element button.registration__debug-settings-button
+Jun 18, 2019 8:12:49 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element div.check-box__check
+Jun 18, 2019 8:12:49 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.check-box__check on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:50 AM com.automation.pageObjects.DebugPage clickToCheckTheDebugValuesAndSeRadioButton
+INFO: Select the debug check box
+Jun 18, 2019 8:12:52 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 4 for element button.registration__debug-settings-button
+Jun 18, 2019 8:12:56 AM com.automation.pageObjects.PatientCreateAccountPage fillInTheAccount
+INFO: Fill in the account tasks
+Jun 18, 2019 8:12:56 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:12:56 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 6 for element button.registration__debug-settings-button
+Jun 18, 2019 8:12:57 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.registration__debug-settings-button on device emulator-5554 loop nr 0
+Jun 18, 2019 8:12:58 AM com.automation.pageObjects.DebugPage tapEmailLoginButton
+INFO: Tap on Email Login button
+Jun 18, 2019 8:12:58 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:12:58 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element input[name='first_name']
+Jun 18, 2019 8:12:58 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed input[name='first_name'] on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:13:00 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element div.check-box__check
+Jun 18, 2019 8:13:00 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.check-box__check on device emulator-5554 loop nr 0
+Jun 18, 2019 8:13:01 AM com.automation.pageObjects.DebugPage clickToCheckTheDebugValuesAndSeRadioButton
+INFO: Select the debug check box
+Jun 18, 2019 8:13:06 AM com.automation.pageObjects.AuthLoginPage enterLoginCredentials
+INFO: Start typing the login credentials
+Jun 18, 2019 8:13:06 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:13:08 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element div.email__label
+Jun 18, 2019 8:13:08 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.email__label on device emulator-5554 loop nr 0
+Jun 18, 2019 8:13:09 AM com.automation.pageObjects.GdprPage acceptGdpr
+INFO: Start the question flow
+Jun 18, 2019 8:13:09 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:13:11 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.spinner-button
+Jun 18, 2019 8:13:11 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.spinner-button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:13:13 AM com.automation.pageObjects.TherapistStartPage showMyProfilePage
+INFO: Show may profile page
+Jun 18, 2019 8:13:13 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:13:16 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element div.app-nav__dropdown
+Jun 18, 2019 8:13:17 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.app-nav__dropdown on device emulator-5554 loop nr 0
+Jun 18, 2019 8:13:17 AM com.automation.pageObjects.QuestionPage startTheQuestionary
+INFO: Start the question flow
+Jun 18, 2019 8:13:17 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:13:19 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:13:19 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.button.therapist-intro__button
+Jun 18, 2019 8:13:19 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.button.therapist-intro__button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:13:21 AM com.automation.pageObjects.QuestionPage fetchTherapistName
+INFO: Fetch the name of the Therapist
+Jun 18, 2019 8:13:21 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:13:21 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element h3.profile-header__full-name
+Jun 18, 2019 8:13:21 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed h3.profile-header__full-name on device emulator-5554 loop nr 0
+Jun 18, 2019 8:13:22 AM com.automation.pageObjects.TherapistStartPage navigateToPatient
+INFO: Navigate to patient tab
+Jun 18, 2019 8:13:22 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:13:23 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element div.therapist-intro__name
+Jun 18, 2019 8:13:23 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.therapist-intro__name on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:13:24 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element li.app-nav__item
+Jun 18, 2019 8:13:24 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed li.app-nav__item on device emulator-5554 loop nr 0
+Jun 18, 2019 8:13:24 AM com.automation.pageObjects.QuestionPage fetchTherapistName
+INFO: Therapist name Anders Larsson  div
+Jun 18, 2019 8:13:25 AM com.automation.pageObjects.TherapistStartPage sendAnInviteToPatientAndLogout
+INFO: Sen invitation to a patient
+Jun 18, 2019 8:13:25 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:13:28 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element .patient-list__invite-link
+Jun 18, 2019 8:13:28 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed .patient-list__invite-link on device emulator-5554 loop nr 0
+Jun 18, 2019 8:13:34 AM com.automation.pageObjects.TherapistStartPage sendAnInviteToPatientAndLogout
+INFO:  te size of invote buttons 2
+Jun 18, 2019 8:13:35 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:13:37 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element div.app-nav__dropdown
+Jun 18, 2019 8:13:37 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.app-nav__dropdown on device emulator-5554 loop nr 0
+Jun 18, 2019 8:13:38 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:13:40 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element .app-nav__link
+Jun 18, 2019 8:13:40 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed .app-nav__link on device emulator-5554 loop nr 0
+Jun 18, 2019 8:13:41 AM com.automation.pageObjects.TherapistStartPage sendAnInviteToPatientAndLogout
+INFO:  te size of div.app-nav__dropdown 8
+Jun 18, 2019 8:13:41 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:13:42 AM com.automation.pageObjects.QuestionPage yearBirthDay
+INFO: In yearOption 1920
+Jun 18, 2019 8:13:43 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element div.app-nav__dropdown
+Jun 18, 2019 8:13:43 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.app-nav__dropdown on device emulator-5554 loop nr 0
+Jun 18, 2019 8:13:45 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:13:47 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element .app-nav__link
+Jun 18, 2019 8:13:47 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed .app-nav__link on device emulator-5554 loop nr 0
+Jun 18, 2019 8:13:48 AM com.automation.pageObjects.TherapistStartPage sendAnInviteToPatientAndLogout
+INFO:  te size of div.app-nav__dropdown 8
+Jun 18, 2019 8:14:00 AM com.automation.pageObjects.StartPage clickOnDebugButton
+INFO: Click Debug button
+Jun 18, 2019 8:14:00 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 0
+Jun 18, 2019 8:14:01 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.button.therapist-outro__button
+Jun 18, 2019 8:14:01 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.button.therapist-outro__button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:06 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Catched a null pointer, do nothing
+Jun 18, 2019 8:14:06 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 2
+Jun 18, 2019 8:14:08 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:11 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.button.therapist-outro__button
+Jun 18, 2019 8:14:11 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.button.therapist-outro__button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:12 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Catched a null pointer, do nothing
+Jun 18, 2019 8:14:12 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 4
+Jun 18, 2019 8:14:13 AM com.automation.pageObjects.QuestionPage startTheQuestionary
+INFO: Size of _meetingFinnishButton 1
+Jun 18, 2019 8:14:13 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:15 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.button.suggestion-done__button
+Jun 18, 2019 8:14:15 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.button.suggestion-done__button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:18 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Catched a null pointer, do nothing
+Jun 18, 2019 8:14:18 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 6
+Jun 18, 2019 8:14:20 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:23 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element div.app-top-bar__profile
+Jun 18, 2019 8:14:23 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.app-top-bar__profile on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:24 AM com.automation.pageObjects.PatientMobileMainPage clickOkayToTalkWitPhysiotherapist
+INFO: click message from Therapist
+Jun 18, 2019 8:14:24 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:24 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Catched a null pointer, do nothing
+Jun 18, 2019 8:14:24 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 8
+Jun 18, 2019 8:14:26 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.button.button--outlined-white
+Jun 18, 2019 8:14:26 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.button.button--outlined-white on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:28 AM com.automation.pageObjects.PatientMobileMainPage clickShowMyProfile
+INFO: Show my profile
+Jun 18, 2019 8:14:28 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:30 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element div.app-top-bar__profile
+Jun 18, 2019 8:14:30 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.app-top-bar__profile on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:31 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Catched a null pointer, do nothing
+Jun 18, 2019 8:14:31 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 10
+Jun 18, 2019 8:14:32 AM com.automation.pageObjects.PatientMobileShowProfilePage clickOnMyAccountSettings
+INFO: Start to delete my account
+Jun 18, 2019 8:14:32 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:34 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.mobile-profile__item.mobile-profile__item--chevron
+Jun 18, 2019 8:14:34 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.mobile-profile__item.mobile-profile__item--chevron on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:36 AM com.automation.pageObjects.PatientMobileShowProfileSettingsPage deleteMyAccount
+INFO: Start to delete my account
+Jun 18, 2019 8:14:36 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:37 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Catched a null pointer, do nothing
+Jun 18, 2019 8:14:37 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 12
+Jun 18, 2019 8:14:38 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element icon-link.icon-link--delete
+Jun 18, 2019 8:14:38 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed icon-link.icon-link--delete on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:41 AM com.automation.pageObjects.StartPage clickOnDebugButton
+INFO: Click Debug button
+Jun 18, 2019 8:14:41 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:43 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Catched a null pointer, do nothing
+Jun 18, 2019 8:14:43 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 14
+Jun 18, 2019 8:14:43 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element button.registration__debug-settings-button
+Jun 18, 2019 8:14:43 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed button.registration__debug-settings-button on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:46 AM com.automation.pageObjects.DebugPage tapEmailLoginButton
+INFO: Tap on Email Login button
+Jun 18, 2019 8:14:46 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:48 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element div.check-box__check
+Jun 18, 2019 8:14:48 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.check-box__check on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:49 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Catched a null pointer, do nothing
+Jun 18, 2019 8:14:49 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 16
+Jun 18, 2019 8:14:49 AM com.automation.pageObjects.DebugPage clickToCheckTheDebugValuesAndSeRadioButton
+INFO: Select the debug check box
+Jun 18, 2019 8:14:55 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Catched a null pointer, do nothing
+Jun 18, 2019 8:14:55 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated emulator-5554 loop nr 18
+Jun 18, 2019 8:14:55 AM com.automation.pageObjects.AuthLoginPage enterLoginCredentials
+INFO: Start typing the login credentials
+Jun 18, 2019 8:14:55 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:14:57 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element div.email__label
+Jun 18, 2019 8:14:57 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.email__label on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:15:01 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Catched a null pointer, do nothing
+Jun 18, 2019 8:15:01 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 0 for element button.registration__debug-settings-button
+Jun 18, 2019 8:15:04 AM com.automation.pageObjects.TherapistStartPage showMyProfilePage
+INFO: Show may profile page
+Jun 18, 2019 8:15:04 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:15:05 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: Catched an exception while in the loop emulator-5554 driverId io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, databaseEnabled=false, desired={platformName=android, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, deviceName=emulator-5554, newCommandTimeout=50, noReset=false, platformVersion=7.1.1, udid=emulator-5554}, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenSize=1440x2560, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=50, noReset=false, platform=LINUX, platformName=Android, platformVersion=7.1.1, takesScreenshot=true, udid=emulator-5554, warnings={}, webStorageEnabled=false}
+Jun 18, 2019 8:15:05 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 2 for element button.registration__debug-settings-button
+Jun 18, 2019 8:15:07 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element div.app-nav__dropdown
+Jun 18, 2019 8:15:07 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.app-nav__dropdown on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:15:09 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: Catched an exception while in the loop emulator-5554 driverId io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, databaseEnabled=false, desired={platformName=android, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, deviceName=emulator-5554, newCommandTimeout=50, noReset=false, platformVersion=7.1.1, udid=emulator-5554}, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenSize=1440x2560, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=50, noReset=false, platform=LINUX, platformName=Android, platformVersion=7.1.1, takesScreenshot=true, udid=emulator-5554, warnings={}, webStorageEnabled=false}
+Jun 18, 2019 8:15:09 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 4 for element button.registration__debug-settings-button
+Jun 18, 2019 8:15:10 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:15:12 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element h3.profile-header__full-name
+Jun 18, 2019 8:15:12 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed h3.profile-header__full-name on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:15:13 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: Catched an exception while in the loop emulator-5554 driverId io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, databaseEnabled=false, desired={platformName=android, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, deviceName=emulator-5554, newCommandTimeout=50, noReset=false, platformVersion=7.1.1, udid=emulator-5554}, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenSize=1440x2560, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=50, noReset=false, platform=LINUX, platformName=Android, platformVersion=7.1.1, takesScreenshot=true, udid=emulator-5554, warnings={}, webStorageEnabled=false}
+Jun 18, 2019 8:15:13 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 6 for element button.registration__debug-settings-button
+Jun 18, 2019 8:15:13 AM com.automation.pageObjects.TherapistStartPage navigateToPatient
+INFO: Navigate to patient tab
+Jun 18, 2019 8:15:13 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:15:15 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element li.app-nav__item
+Jun 18, 2019 8:15:15 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed li.app-nav__item on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:15:17 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: Catched an exception while in the loop emulator-5554 driverId io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, databaseEnabled=false, desired={platformName=android, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, deviceName=emulator-5554, newCommandTimeout=50, noReset=false, platformVersion=7.1.1, udid=emulator-5554}, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenSize=1440x2560, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=50, noReset=false, platform=LINUX, platformName=Android, platformVersion=7.1.1, takesScreenshot=true, udid=emulator-5554, warnings={}, webStorageEnabled=false}
+Jun 18, 2019 8:15:17 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 8 for element button.registration__debug-settings-button
+Jun 18, 2019 8:15:17 AM com.automation.pageObjects.TherapistStartPage sendAnInviteToPatientAndLogout
+INFO: Sen invitation to a patient
+Jun 18, 2019 8:15:17 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:15:20 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element .patient-list__invite-link
+Jun 18, 2019 8:15:20 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed .patient-list__invite-link on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:15:21 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: Catched an exception while in the loop emulator-5554 driverId io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, databaseEnabled=false, desired={platformName=android, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, deviceName=emulator-5554, newCommandTimeout=50, noReset=false, platformVersion=7.1.1, udid=emulator-5554}, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenSize=1440x2560, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=50, noReset=false, platform=LINUX, platformName=Android, platformVersion=7.1.1, takesScreenshot=true, udid=emulator-5554, warnings={}, webStorageEnabled=false}
+Jun 18, 2019 8:15:21 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 10 for element button.registration__debug-settings-button
+Jun 18, 2019 8:15:25 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: Catched an exception while in the loop emulator-5554 driverId io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, databaseEnabled=false, desired={platformName=android, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, deviceName=emulator-5554, newCommandTimeout=50, noReset=false, platformVersion=7.1.1, udid=emulator-5554}, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenSize=1440x2560, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=50, noReset=false, platform=LINUX, platformName=Android, platformVersion=7.1.1, takesScreenshot=true, udid=emulator-5554, warnings={}, webStorageEnabled=false}
+Jun 18, 2019 8:15:25 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 12 for element button.registration__debug-settings-button
+Jun 18, 2019 8:15:28 AM com.automation.pageObjects.TherapistStartPage sendAnInviteToPatientAndLogout
+INFO:  te size of invote buttons 2
+Jun 18, 2019 8:15:28 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:15:29 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: Catched an exception while in the loop emulator-5554 driverId io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, databaseEnabled=false, desired={platformName=android, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, deviceName=emulator-5554, newCommandTimeout=50, noReset=false, platformVersion=7.1.1, udid=emulator-5554}, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenSize=1440x2560, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=50, noReset=false, platform=LINUX, platformName=Android, platformVersion=7.1.1, takesScreenshot=true, udid=emulator-5554, warnings={}, webStorageEnabled=false}
+Jun 18, 2019 8:15:29 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 14 for element button.registration__debug-settings-button
+Jun 18, 2019 8:15:31 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element div.app-nav__dropdown
+Jun 18, 2019 8:15:31 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.app-nav__dropdown on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:15:32 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:15:33 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: Catched an exception while in the loop emulator-5554 driverId io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, databaseEnabled=false, desired={platformName=android, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, deviceName=emulator-5554, newCommandTimeout=50, noReset=false, platformVersion=7.1.1, udid=emulator-5554}, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenSize=1440x2560, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=50, noReset=false, platform=LINUX, platformName=Android, platformVersion=7.1.1, takesScreenshot=true, udid=emulator-5554, warnings={}, webStorageEnabled=false}
+Jun 18, 2019 8:15:33 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 16 for element button.registration__debug-settings-button
+Jun 18, 2019 8:15:35 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element .app-nav__link
+Jun 18, 2019 8:15:35 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed .app-nav__link on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:15:36 AM com.automation.pageObjects.TherapistStartPage sendAnInviteToPatientAndLogout
+INFO:  te size of div.app-nav__dropdown 8
+Jun 18, 2019 8:15:37 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: Catched an exception while in the loop emulator-5554 driverId io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, databaseEnabled=false, desired={platformName=android, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, deviceName=emulator-5554, newCommandTimeout=50, noReset=false, platformVersion=7.1.1, udid=emulator-5554}, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenSize=1440x2560, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=50, noReset=false, platform=LINUX, platformName=Android, platformVersion=7.1.1, takesScreenshot=true, udid=emulator-5554, warnings={}, webStorageEnabled=false}
+Jun 18, 2019 8:15:37 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 18 for element button.registration__debug-settings-button
+Jun 18, 2019 8:15:37 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:15:39 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element div.app-nav__dropdown
+Jun 18, 2019 8:15:39 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed div.app-nav__dropdown on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:15:41 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: Catched an exception while in the loop emulator-5554 driverId io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, databaseEnabled=false, desired={platformName=android, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, deviceName=emulator-5554, newCommandTimeout=50, noReset=false, platformVersion=7.1.1, udid=emulator-5554}, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenSize=1440x2560, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=50, noReset=false, platform=LINUX, platformName=Android, platformVersion=7.1.1, takesScreenshot=true, udid=emulator-5554, warnings={}, webStorageEnabled=false}
+Jun 18, 2019 8:15:41 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 20 for element button.registration__debug-settings-button
+Jun 18, 2019 8:15:41 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:15:43 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on 52RBB18123202825 loop nr 0 for element .app-nav__link
+Jun 18, 2019 8:15:43 AM com.automation.helpFunctions.HelpFunctions isTheFoundElementDisplayed
+INFO:  Is the element displayed .app-nav__link on device 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:15:44 AM com.automation.pageObjects.TherapistStartPage sendAnInviteToPatientAndLogout
+INFO:  te size of div.app-nav__dropdown 8
+Jun 18, 2019 8:15:45 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: Catched an exception while in the loop emulator-5554 driverId io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, databaseEnabled=false, desired={platformName=android, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, deviceName=emulator-5554, newCommandTimeout=50, noReset=false, platformVersion=7.1.1, udid=emulator-5554}, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenSize=1440x2560, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=50, noReset=false, platform=LINUX, platformName=Android, platformVersion=7.1.1, takesScreenshot=true, udid=emulator-5554, warnings={}, webStorageEnabled=false}
+Jun 18, 2019 8:15:45 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 22 for element button.registration__debug-settings-button
+Jun 18, 2019 8:16:00 AM com.automation.pageObjects.StartPage clickOnDebugButton
+INFO: Click Debug button
+Jun 18, 2019 8:16:00 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 0
+Jun 18, 2019 8:16:01 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: Catched an exception while in the loop emulator-5554 driverId io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, databaseEnabled=false, desired={platformName=android, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, deviceName=emulator-5554, newCommandTimeout=50, noReset=false, platformVersion=7.1.1, udid=emulator-5554}, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenSize=1440x2560, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=50, noReset=false, platform=LINUX, platformName=Android, platformVersion=7.1.1, takesScreenshot=true, udid=emulator-5554, warnings={}, webStorageEnabled=false}
+Jun 18, 2019 8:16:01 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 30 for element button.registration__debug-settings-button
+Jun 18, 2019 8:16:03 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Catched a null pointer, do nothing
+Jun 18, 2019 8:16:03 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 2
+Jun 18, 2019 8:16:05 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: Catched an exception while in the loop emulator-5554 driverId io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, databaseEnabled=false, desired={platformName=android, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, deviceName=emulator-5554, newCommandTimeout=50, noReset=false, platformVersion=7.1.1, udid=emulator-5554}, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenSize=1440x2560, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=50, noReset=false, platform=LINUX, platformName=Android, platformVersion=7.1.1, takesScreenshot=true, udid=emulator-5554, warnings={}, webStorageEnabled=false}
+Jun 18, 2019 8:16:05 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 32 for element button.registration__debug-settings-button
+Jun 18, 2019 8:16:06 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Catched a null pointer, do nothing
+Jun 18, 2019 8:16:06 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 4
+Jun 18, 2019 8:16:09 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: Catched an exception while in the loop emulator-5554 driverId io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, databaseEnabled=false, desired={platformName=android, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, deviceName=emulator-5554, newCommandTimeout=50, noReset=false, platformVersion=7.1.1, udid=emulator-5554}, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenSize=1440x2560, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=50, noReset=false, platform=LINUX, platformName=Android, platformVersion=7.1.1, takesScreenshot=true, udid=emulator-5554, warnings={}, webStorageEnabled=false}
+Jun 18, 2019 8:16:09 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 34 for element button.registration__debug-settings-button
+Jun 18, 2019 8:16:09 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Catched a null pointer, do nothing
+Jun 18, 2019 8:16:09 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 6
+Jun 18, 2019 8:16:13 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Catched a null pointer, do nothing
+Jun 18, 2019 8:16:13 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 8
+Jun 18, 2019 8:16:13 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: Catched an exception while in the loop emulator-5554 driverId io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, databaseEnabled=false, desired={platformName=android, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, deviceName=emulator-5554, newCommandTimeout=50, noReset=false, platformVersion=7.1.1, udid=emulator-5554}, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenSize=1440x2560, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=50, noReset=false, platform=LINUX, platformName=Android, platformVersion=7.1.1, takesScreenshot=true, udid=emulator-5554, warnings={}, webStorageEnabled=false}
+Jun 18, 2019 8:16:13 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 36 for element button.registration__debug-settings-button
+Jun 18, 2019 8:16:16 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Catched a null pointer, do nothing
+Jun 18, 2019 8:16:16 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 10
+Jun 18, 2019 8:16:17 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: Catched an exception while in the loop emulator-5554 driverId io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, databaseEnabled=false, desired={platformName=android, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, deviceName=emulator-5554, newCommandTimeout=50, noReset=false, platformVersion=7.1.1, udid=emulator-5554}, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenSize=1440x2560, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=50, noReset=false, platform=LINUX, platformName=Android, platformVersion=7.1.1, takesScreenshot=true, udid=emulator-5554, warnings={}, webStorageEnabled=false}
+Jun 18, 2019 8:16:17 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: In the loop  waiting for the Page Object on emulator-5554 loop nr 38 for element button.registration__debug-settings-button
+Jun 18, 2019 8:16:19 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Catched a null pointer, do nothing
+Jun 18, 2019 8:16:19 AM com.automation.helpFunctions.HelpFunctions checkInitiationofPageObject
+INFO:  Waiting for Page Object to be instantiated 52RBB18123202825 loop nr 12
+Jun 18, 2019 8:16:21 AM com.automation.helpFunctions.HelpFunctions waitForThePageObjectToBeLoadedToFindTheWebElement
+INFO: Catched an exception while in the loop emulator-5554 driverId io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, databaseEnabled=false, desired={platformName=android, chromedriverExecutableDir=C:\Users\gordo\githubJA\e2e-test-automation-framework\chromeDrivers, appActivity=.MainActivity, appPackage=ai.arthro.jointacademy_stage, autoWebview=true, deviceName=emulator-5554, newCommandTimeout=50, noReset=false, platformVersion=7.1.1, udid=emulator-5554}, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenSize=1440x2560, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=50, noReset=false, platform=LINUX, platformName=Android, platformVersion=7.1.1, takesScreenshot=true, udid=emulator-5554, warnings={}, webStorageEnabled=false}
+]]></system-err>
+</testsuite>

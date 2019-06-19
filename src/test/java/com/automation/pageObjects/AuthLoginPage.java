@@ -5,7 +5,6 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.logging.Logger;
 
@@ -15,7 +14,6 @@ import static com.automation.helpFunctions.HelpFunctions.waitForThePageObjectToB
 public class AuthLoginPage {
     private static final Logger LOG = Logger.getLogger(AuthLoginPage.class.getName());
     protected AppiumDriver driver;
-    protected WebDriverWait wait;
 
     public AuthLoginPage(final AppiumDriver driver) {
         this.driver = driver;
