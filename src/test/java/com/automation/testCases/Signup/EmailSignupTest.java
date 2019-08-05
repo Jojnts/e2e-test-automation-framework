@@ -46,14 +46,14 @@ public class EmailSignupTest extends BaseTest {
         patientCreateAccountPage.fillInTheAccount(driver, firstName, lastName, userEmail,userPassword);
         gdprPage.acceptGdpr(driver);
         questionOnePage.startTheQuestionary(driver, countryCode);
-        LOG.info(" the therapists first name is " + therapistStartPage.getTherapistFirstName());
-        LOG.info(" the therapists last name is " + therapistStartPage.getTherapistLastName());
+        LOG.info(" the therapist first name is " + therapistStartPage.getTherapistFirstName());
+        LOG.info(" the therapist last name is " + therapistStartPage.getTherapistLastName());
         patientMobileMainPage.clickOkayToTalkWitPhysiotherapist(driver);
         patientMobileMainPage.clickShowMyProfile(driver);
         patientMobileShowProfilePage.clickOnMyAccountSettings(driver);
         patientMobileShowProfileSettingsPage.deleteMyAccount(driver);
-        Assert.assertEquals(therapistStartPage.getTherapistFirstName(), questionOnePage.getTherapistFirstName(), "Not the same therapsit who sent the invite");
-        Assert.assertEquals(therapistStartPage.getTherapistLastName(), questionOnePage.getTherapistLastName(), "Not the same therapsit who sent the invite");
+        Assert.assertEquals(questionOnePage.getTherapistFirstName(), therapistStartPage.getTherapistFirstName(),"Not the same therapist who sent the invite");
+        Assert.assertEquals(questionOnePage.getTherapistLastName(), therapistStartPage.getTherapistLastName(),"Not the same therapist who sent the invite");
     }
 
     @DataProvider(name="invitePatientsNO")

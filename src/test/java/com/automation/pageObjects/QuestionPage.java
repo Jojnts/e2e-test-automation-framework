@@ -31,9 +31,13 @@ public class QuestionPage {
     public String getTherapistLastName() { return therapistLastName; }
 
 
-    private static final String  _continueQuestionsCss = "button.button.therapist-intro__button";
+    private static final String  _continueQuestionsCss = "button.button.question__button";
     @FindBy(css = _continueQuestionsCss)
-    private WebElement _therapistButton;
+    private WebElement _continueQuestions;
+
+    private static final String  _welcomeQuestionsCss = "button.question__button";
+    @FindBy(css = _welcomeQuestionsCss)
+    private WebElement _welcomeQuestionsButton;
 
     @FindBy(css = "div#radio--left_hip")
     private WebElement _leftHip;
@@ -86,9 +90,9 @@ public class QuestionPage {
     public void startTheQuestionary(final AppiumDriver driver, String countryCode) {
 
         LOG.info("Start the question flow");
-        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _continueQuestionsCss, 0);
-        getTheNameOfTheTherapist();
-        _therapistButton.click();
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _welcomeQuestionsCss, 0);
+        //getTheNameOfTheTherapist(); changed during my vaccation in July
+        _welcomeQuestionsButton.click();
         waitForNextViewToBeLoaded(1500);
         _leftHip.click();
         waitForNextViewToBeLoaded(1500);
@@ -117,15 +121,16 @@ public class QuestionPage {
         yearBirthDay();
         lenghtAndWeight(countryCode);
         moreInfoTOShare();
-        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _thanksFromTherapistCss, 4);
-        _thanksFromTherapist.click();
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _continueQuestionsCss, 4);
+        getTheNameOfTheTherapist(); //The new flow changed during my vaccation in July
+        _continueQuestions.click();
         waitForNextViewToBeLoaded(1000);
         _timeForMeetingYes.click();
         _textAreaComment.sendKeys("About two weeks from now is okay. ");
         driver.hideKeyboard();
-        boolean found = waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _thanksFromTherapistCss, 3);
+        boolean found = waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _continueQuestionsCss, 3);
         if(found) { //this is for old Huawei tablet, in the automation it goes back one page
-            _thanksFromTherapist.click();
+            _continueQuestions.click();
         }        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _meetingFinnishButtonCss, 3);
         LOG.info("Size of _meetingFinnishButton " + _meetingFinnishButton.size());
         _meetingFinnishButton.get(0).click();
@@ -160,8 +165,8 @@ public class QuestionPage {
         oSelect = new Select(_dayList);
         elementCount = oSelect.getOptions();
         elementCount.get(10).click();
-        _inputNameHeader.click();
-        waitForNextViewToBeLoaded(500);
+        //_inputNameHeader.click();
+        waitForNextViewToBeLoaded(1000);
         _continueButton.click();
         waitForNextViewToBeLoaded(2000);
     }
@@ -213,7 +218,7 @@ public class QuestionPage {
         waitForNextViewToBeLoaded(2000);
     }
 
-    private static final String _namesCss = "div.therapist-intro__name";
+    private static final String _namesCss = "div.question-outro__name";
     @FindBy(css = _namesCss)
     private WebElement _names;
 
