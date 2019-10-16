@@ -93,24 +93,24 @@ public class QuestionPage {
         waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _welcomeQuestionsCss, 0);
         //getTheNameOfTheTherapist(); changed during my vaccation in July
         _welcomeQuestionsButton.click();
-        waitForNextViewToBeLoaded(1500);
+        waitForNextViewToBeLoaded(1000);
         _leftHip.click();
-        waitForNextViewToBeLoaded(1500);
+        waitForNextViewToBeLoaded(1000);
         //3 Har du fått diagnos artros i din vänstra höft tidigare?
         _radioFalse.click();
-        waitForNextViewToBeLoaded(1500);
+        waitForNextViewToBeLoaded(1000);
         //4 Har du smärta i din vänstra höft vi rörelser eller belastning?
         _radioTrue.click();
-        waitForNextViewToBeLoaded(1500);
+        waitForNextViewToBeLoaded(1000);
         //5 Upplever du stelhet på morgonen, som går över efter en timme eller mindre?
         _radioTrue.click();
-        waitForNextViewToBeLoaded(1500);
+        waitForNextViewToBeLoaded(1000);
         //6 Har du, eller har du haft, ett arbete som medför stående, gående eller roterande uppgifter?
         _radioTrue.click();
-        waitForNextViewToBeLoaded(1500);
+        waitForNextViewToBeLoaded(1000);
         //7 Har du vid något tillfälle skadat din vänstra höft så allvarligt att du uppsökt läkare?
         _radioFalse.click();
-        waitForNextViewToBeLoaded(1500);
+        waitForNextViewToBeLoaded(1000);
         //8 Markera den ruta som motsvarar din genomsnittliga smärta från din vänstrahöft den senaste veckan.
         _scaleList.get(8).click();
         _nextButton.click();
@@ -136,7 +136,7 @@ public class QuestionPage {
         _meetingFinnishButton.get(0).click();
         waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _registrationFinnishedButtonCss, 5);
         _registrationFinnishedButton.click();
-        waitForNextViewToBeLoaded(2500);
+        waitForNextViewToBeLoaded(4500);
     }
 
     @FindBy(css = "select[name='year']")

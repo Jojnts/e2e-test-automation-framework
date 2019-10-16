@@ -6,7 +6,6 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
-import org.openqa.selenium.NotFoundException;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
@@ -18,7 +17,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 import static com.automation.config.EnvironmentConfig.*;
-import static com.automation.helpFunctions.HelpFunctions.waitForNextViewToBeLoaded;
 import static com.automation.helpFunctions.HelpFunctions.waitForThePageObjectToBeLoadedToFindTheWebElement;
 
 public class WebDriver {
@@ -34,7 +32,11 @@ public class WebDriver {
     protected PatientOnboardingPage patientOnboardingPage;
     protected PatientMobileMainPage patientMobileMainPage;
     protected PatientMobileShowProfilePage patientMobileShowProfilePage;
+    protected PatientMobileShowProfilePaymentPage patientMobileShowProfilePaymentPage;
+    protected PatientMobileShowProfileReceiptPage patientMobileShowProfileReceiptPage;
     protected PatientMobileShowProfileSettingsPage patientMobileShowProfileSettingsPage;
+    protected PaymentMethodPage paymentMethodPage;
+    protected PaymentPage paymentPage;
     protected QuestionPage questionOnePage;
     protected StartPage startPage;
     protected TherapistStartPage therapistStartPage;
@@ -67,12 +69,14 @@ public class WebDriver {
          driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
          driverMap.put(deviceId, driver);
          initiateInstances(driver);
-         boolean found = waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _buttonDebugCss , 0);
-         if(found) {
+         boolean found = waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _buttonDebugCss , 10);
+         //GOV
+         /*boolean found = waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _buttonDebugCss , 0);
+          if(found) {
              waitForNextViewToBeLoaded(4000);
          } else {
              throw new NotFoundException("The debugButton was not found in the startup for the first test!");
-         }
+         }*/
         LOG.info("Created driver to RETURN : " + deviceId);
         return driver;
     }
@@ -96,6 +100,8 @@ public class WebDriver {
                 capabilities.setCapability("appActivity", APP_ACTIVITY);
                 capabilities.setCapability("noReset", "false");
                 capabilities.setCapability("chromedriverExecutableDir", useChromeDriverPath());
+                //capabilities.setCapability("unicodeKeyboard", "true");
+                //capabilities.setCapability("resetKeyboard", "true");
                 break;
             default:
                 try {
@@ -115,7 +121,11 @@ public class WebDriver {
         patientOnboardingPage = new PatientOnboardingPage(driver);
         patientMobileMainPage = new PatientMobileMainPage(driver);
         patientMobileShowProfilePage = new PatientMobileShowProfilePage(driver);
+        patientMobileShowProfilePaymentPage = new PatientMobileShowProfilePaymentPage(driver);
+        patientMobileShowProfileReceiptPage = new PatientMobileShowProfileReceiptPage(driver);
         patientMobileShowProfileSettingsPage = new PatientMobileShowProfileSettingsPage(driver);
+        paymentMethodPage = new PaymentMethodPage(driver);
+        paymentPage = new PaymentPage(driver);
         questionOnePage = new QuestionPage(driver);
         startPage = new StartPage(driver);
         therapistStartPage = new TherapistStartPage(driver);

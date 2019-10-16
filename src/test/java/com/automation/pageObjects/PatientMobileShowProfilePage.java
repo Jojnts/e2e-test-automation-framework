@@ -1,6 +1,5 @@
 package com.automation.pageObjects;
 
-import com.automation.helpFunctions.HelpFunctions;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebElement;
@@ -10,6 +9,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 import java.util.logging.Logger;
+
+import static com.automation.helpFunctions.HelpFunctions.waitForNextViewToBeLoaded;
+import static com.automation.helpFunctions.HelpFunctions.waitForThePageObjectToBeLoadedToFindTheWebElement;
 
 public class PatientMobileShowProfilePage {
     private static final Logger LOG = Logger.getLogger(PatientMobileShowProfilePage.class.getName());
@@ -30,8 +32,27 @@ public class PatientMobileShowProfilePage {
 
 
     public void clickOnMyAccountSettings(final AppiumDriver driver) {
-        LOG.info("Start to delete my account");
-        HelpFunctions.waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _profileSettingsListCss, 0);
+        LOG.info("Click account settings");
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _profileSettingsListCss, 0);
         _profileSettingsList.get(0).click();
+    }
+
+    public void clickOnPayment(final AppiumDriver driver) {
+        LOG.info("Click payment");
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _profileSettingsListCss, 0);
+        _profileSettingsList.get(1).click();
+    }
+
+    public void clickOnFrikort(final AppiumDriver driver) {
+        LOG.info("Click frikort");
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _profileSettingsListCss, 0);
+        _profileSettingsList.get(2).click();
+    }
+
+    public void clickOnReceipt(final AppiumDriver driver) {
+        LOG.info("Click receiptt");
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _profileSettingsListCss, 0);
+        _profileSettingsList.get(3).click();
+        waitForNextViewToBeLoaded(2000);
     }
 }

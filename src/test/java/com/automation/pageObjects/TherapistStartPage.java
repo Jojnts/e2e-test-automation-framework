@@ -76,11 +76,10 @@ public class TherapistStartPage {
     public void sendAnInviteToPatientAndLogout(final AppiumDriver driver, String firstName, String lastName, String userEmail) {
         clickDropDownMenu();
         waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _dropDownMenuChoicesCss, 3);
-        LOG.info(" te size of div.app-nav__dropdown " + _dropDownMenuChoices.size()); //There are for now seven elements
         _dropDownMenuChoices.get(0).click();
         getTheTherapistName();
         navigateToPatient(driver);
-        LOG.info("Sen invitation to a patient");
+        LOG.info("Send invitation to a patient");
         boolean found = waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _inviteCss, 10);
         if (found) {
             _invite.click();
@@ -94,14 +93,12 @@ public class TherapistStartPage {
         String deviceNamefourCharacters = cap.getCapability("deviceName").toString().substring(0, 3);
         _textInputList.get(5).sendKeys(deviceNamefourCharacters + userEmail);
         waitForNextViewToBeLoaded(1500);
-        LOG.info(" te size of invote buttons " + _inviteButton.size());
         _inviteButton.get(1).click();
-        int coumnter = 0;
-        while ( coumnter < 2) { //a bugg in the app, need to click twise
-            coumnter++;
+        int counter = 0;
+        while ( counter < 2) { //a bugg in the app, need to click twise
+            counter++;
             clickDropDownMenu();
-            waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _dropDownMenuChoicesCss, 5);
-            LOG.info(" te size of div.app-nav__dropdown " + _dropDownMenuChoices.size()); //There are for now seven elements
+            waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _dropDownMenuChoicesCss, 8);
             _dropDownMenuChoices.get(4).click();
         }
     }

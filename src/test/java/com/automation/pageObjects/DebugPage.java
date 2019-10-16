@@ -39,7 +39,7 @@ public class DebugPage{
     private List<WebElement> _buttonList;;
 
     private void clickToCheckTheDebugValuesAndSeRadioButton(final AppiumDriver driver, String countryCode) {
-        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _checkBoxCss, 0);
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _checkBoxCss, 8);
         LOG.info("Select the debug check box");
         _checkBox.click();
 
@@ -58,7 +58,7 @@ public class DebugPage{
                 break;
         }
         _buttonList.get(0).click();  //reload button
-        waitForNextViewToBeLoaded(2000);
+        waitForNextViewToBeLoaded(4000);
         _checkBox.click();
     }
     public void tapEmailLoginButton(final AppiumDriver driver, String countryCode) {

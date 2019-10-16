@@ -15,7 +15,7 @@ public class EnvironmentConfig {
 
     public enum EnvironmentNames {
         SANDBOX,
-        STAGE;
+        STAGE
     }
 
     private static String whenRunTestNgXmlFiles() {
@@ -32,10 +32,8 @@ public class EnvironmentConfig {
         switch (appPackageGradle.toLowerCase()) {
             case "sandbox":
                 return "ai.arthro.jointacademy_sandbox";
-            case "stage":
-                return "ai.arthro.jointacademy_stage";
             default:
-                return "ai.arthro.jointacademy_sandbox";
+                return "ai.arthro.jointacademy_stage";
         }
     }
 
