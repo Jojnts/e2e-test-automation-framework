@@ -38,11 +38,23 @@ public class PaymentMethodPage {
 
 
     public void useCard(final AppiumDriver driver) {
-        LOG.info("Have no frikort");
+        LOG.info("Have no insurance");
         waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _FrikortNoCss, 5);
         _FrikortNoButton.click();
         waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _GoToPayCss, 5);
         _GoToPayButton.click();
     }
 
+
+    private static final String  _PayUsButtonCss = "button.button.mobile-subscription-us__button";
+    @FindBy(css = _PayUsButtonCss)
+    private WebElement _PayUsButton;
+
+    public void useInsurance(final AppiumDriver driver) {
+        LOG.info("Have insurance");
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _FrikortYesCss, 5);
+        _FrikortYesButton.click();
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _PayUsButtonCss, 5);
+        _PayUsButton.click();
+    }
 }

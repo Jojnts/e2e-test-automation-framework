@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 public class EmailLoginTest extends BaseTest {
      private final Logger LOG = Logger.getLogger(EmailLoginTest.class.getName());
 
-    @Test
+    @Test(groups = {"groupLogin"})
     public void fromStartpageLoginWithWrongCredentialSE() {
         String passw = "12345679";
         String username = "hoppsan@tre.com";
@@ -29,7 +29,7 @@ public class EmailLoginTest extends BaseTest {
         };
     }
 
-    @Test(dataProvider = "loginAccountsSE", dependsOnMethods = { "fromStartpageLoginWithWrongCredentialSE" })
+    @Test(dependsOnGroups = { "groupLogin" }, dataProvider = "loginAccountsSE")
     public void fromStartpageLoginWitDdifferentWrongCredential(String cc, String userEmail, String userPassword) {
         authLoginPage.enterLoginCredentials(driver, userEmail, userPassword);
         Assert.assertEquals(authLoginPage.errorMessageTextIs(driver),"Fel e-postadress eller lösenord." ,"The error message is not correct ");

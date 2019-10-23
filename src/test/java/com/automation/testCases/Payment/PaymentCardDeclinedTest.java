@@ -21,7 +21,7 @@ public class PaymentCardDeclinedTest extends BaseTest {
         Card_succeed
     }
 
-    @Test (priority = -5)
+    @Test (priority = -5, groups = {"groupCardDecline1"})
     public void beforeForFailedPayment( ){
         SoftAssert softAssertion = new SoftAssert();
         startPage.clickOnDebugButton(driver);
@@ -35,7 +35,7 @@ public class PaymentCardDeclinedTest extends BaseTest {
         softAssertion.assertAll();
     }
 
-    @Test (priority = -5, dependsOnMethods = {"beforeForFailedPayment" }, dataProvider = "userPerCountryAndFailedPayment")
+    @Test (priority = -5, groups = {"groupCardDecline2"}, dependsOnGroups = { "groupCardDecline1" }, dataProvider = "userPerCountryAndFailedPayment")
     public void messageForFailedPayment(String countryCode, String cardNumber, String cardrdDescr, Enum choice, Enum cardValid  ) {
         SoftAssert softAssertion = new SoftAssert();
         paymentPage.cardInputsAndPay(driver, cardNumber);
@@ -43,7 +43,7 @@ public class PaymentCardDeclinedTest extends BaseTest {
         paymentPage.clickButtonChangeCard(driver);
         softAssertion.assertAll();
     }
-    @Test (priority = -5, dependsOnMethods = {"messageForFailedPayment" })
+    @Test (priority = -5, groups = {"groupCardDecline3"} , dependsOnGroups = { "groupCardDecline2" })
     public void afterForFailedPayment(){
         paymentPage.clickCrossButton(driver);
         paymentPage.clickButtonCancel(driver);

@@ -35,6 +35,8 @@ public class WebDriver {
     protected PatientMobileShowProfilePaymentPage patientMobileShowProfilePaymentPage;
     protected PatientMobileShowProfileReceiptPage patientMobileShowProfileReceiptPage;
     protected PatientMobileShowProfileSettingsPage patientMobileShowProfileSettingsPage;
+    protected PaymentActivityUSPage paymentActivityUSPage;
+    protected PaymentInsuranceActivityUSPage paymentInsuranceActivityUSPage;
     protected PaymentMethodPage paymentMethodPage;
     protected PaymentPage paymentPage;
     protected QuestionPage questionOnePage;
@@ -124,6 +126,8 @@ public class WebDriver {
         patientMobileShowProfilePaymentPage = new PatientMobileShowProfilePaymentPage(driver);
         patientMobileShowProfileReceiptPage = new PatientMobileShowProfileReceiptPage(driver);
         patientMobileShowProfileSettingsPage = new PatientMobileShowProfileSettingsPage(driver);
+        paymentActivityUSPage = new PaymentActivityUSPage((driver));
+        paymentInsuranceActivityUSPage = new PaymentInsuranceActivityUSPage(driver);
         paymentMethodPage = new PaymentMethodPage(driver);
         paymentPage = new PaymentPage(driver);
         questionOnePage = new QuestionPage(driver);

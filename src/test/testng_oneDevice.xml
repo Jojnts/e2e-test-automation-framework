@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All tests" >
-    <test name="Android device 1">
-        <parameter name="PLATFORM_VERSION_" value="8.0"/>
-        <parameter name="UDID_" value="CB512DERZH"/>
+    <test name="Android device 1" preserve-order="true">
+        <parameter name="PLATFORM_VERSION_" value="6.0"/>
+        <parameter name="UDID_" value="52RBB18123202825"/>
         <parameter name="APPIUM_PORT_" value="5100"/>
         <parameter name="PLATFORM_" value="Android"/>
         <classes>
             <class name="com.automation.testCases.Payment.PaymentCardDeclinedTest"/>
+            <class name="com.automation.testCases.Signup.EmailSignupTest"/>
+            <class name="com.automation.testCases.Login.EmailLoginTest"/>
         </classes>
     </test>
 </suite>

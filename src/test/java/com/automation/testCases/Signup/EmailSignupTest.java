@@ -10,9 +10,9 @@ import java.util.logging.Logger;
 import static com.automation.config.EnvironmentConfig.appPackageToBeUse;
 
 public class EmailSignupTest extends BaseTest {
-     private final Logger LOG = Logger.getLogger(EmailSignupTest.class.getName());
+    private final Logger LOG = Logger.getLogger(EmailSignupTest.class.getName());
 
-    @Test(priority = -5 , dataProvider = "invitePatientsNO")
+    @Test(priority = -4, groups = {"groupSignup"}, dataProvider = "invitePatientsNO")
     public void sendInviteAsTherapistInNorway(String countryCode, String firstName, String lastName,String userEmail, String userPassword){
         startPage.clickOnDebugButton(driver);
         debugPage.tapEmailLoginButton(driver, countryCode );
@@ -26,7 +26,7 @@ public class EmailSignupTest extends BaseTest {
         therapistStartPage.sendAnInviteToPatientAndLogout(driver, firstName, lastName, userEmail);
     }
 
-    @Test(priority = -5 ,dataProvider = "invitePatientsNO", dependsOnMethods = { "sendInviteAsTherapistInNorway" })
+    @Test(priority = -4, dependsOnGroups = { "groupSignup" }, dataProvider = "invitePatientsNO")
     public void withInviteSignUpAndDectivateAccountInNorway(String countryCode, String firstName, String lastName,String userEmail, String userPassword){
         SoftAssert softAssertion= new SoftAssert();
         startPage.clickOnDebugButton(driver);
