@@ -6,28 +6,30 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import java.util.logging.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static com.automation.config.EnvironmentConfig.appPackageToBeUse;
 
 public class EmailSignupTest extends BaseTest {
     private final Logger LOG = Logger.getLogger(EmailSignupTest.class.getName());
 
-    @Test(priority = -4, groups = {"groupSignup"}, dataProvider = "invitePatientsNO")
+    @Test(groups = {"groupSignup"}, dataProvider = "invitePatientsNO")
     public void sendInviteAsTherapistInNorway(String countryCode, String firstName, String lastName,String userEmail, String userPassword){
         startPage.clickOnDebugButton(driver);
         debugPage.tapEmailLoginButton(driver, countryCode );
-        if (appPackageToBeUse().compareToIgnoreCase("ai.arthro.jointacademy_stage") == 0) {
-            authLoginPage.enterLoginCredentials(driver, "therapist+12366@ja.com", "123123123");
+        String bundldeId = appPackageToBeUse();
+        if (bundldeId.contains("sandbox")) {
+            authLoginPage.enterLoginCredentials(driver, "therapist+5248@ja.com", "123123123");
+        }
+        else if (bundldeId.contains("stage")) {
+            authLoginPage.enterLoginCredentials(driver, "therapist+5248@ja.com", "123123123");
         }
         else {
-            //use dataSet LOCALDATA or SCRUBDATA
-            authLoginPage.enterLoginCredentials(driver, "therapist+12366@ja.com", "123123123");
+            //uLOCALDATA or SCRUBDATA
+            authLoginPage.enterLoginCredentials(driver, "therapist+1@jojnts.com", "123123123");
         }
         therapistStartPage.sendAnInviteToPatientAndLogout(driver, firstName, lastName, userEmail);
-    }
-
-    @Test(priority = -4, dependsOnGroups = { "groupSignup" }, dataProvider = "invitePatientsNO")
-    public void withInviteSignUpAndDectivateAccountInNorway(String countryCode, String firstName, String lastName,String userEmail, String userPassword){
         SoftAssert softAssertion= new SoftAssert();
         startPage.clickOnDebugButton(driver);
         debugPage.tapEmailSignupButton(driver, countryCode);
@@ -48,7 +50,7 @@ public class EmailSignupTest extends BaseTest {
     @DataProvider(name="invitePatientsNO")
     public Object[][] getPatientsToInviteData() {
         return new Object[][] {
-                {"NO", "Sven", "Svan","Sven.Svan@testno.no", "123123123"},
+                {"SE", "Sven", "Svan","Sven.Svan@test.se", "+46777174301"},
         };
     }
 }

@@ -31,15 +31,35 @@ public class EnvironmentConfig {
         }
         switch (appPackageGradle.toLowerCase()) {
             case "sandbox":
+                return "ai.arthro.jointacademy-sandbox";
+            default:
+                return "ai.arthro.jointacademy-stage";
+        }
+    }
+
+    public final static String appPackageToBeUseAndroid(){
+        String appPackageGradle = System.getProperty("testEnv");
+        if (appPackageGradle == null) {
+            //The testEnv is not set through gradle then use stage
+            appPackageGradle = whenRunTestNgXmlFiles().toLowerCase();
+        }
+        switch (appPackageGradle.toLowerCase()) {
+            case "sandbox":
                 return "ai.arthro.jointacademy_sandbox";
             default:
                 return "ai.arthro.jointacademy_stage";
         }
     }
 
+    public final static String appTestEnvUrlBeUse(){
+        String testEnvUrl = System.getProperty("testEnvUrl");
+        return testEnvUrl;
+    }
     private static String getHostPlatform() {
         Platform hostPlatform = Platform.getCurrent();
         switch (hostPlatform) {
+            case MAC:
+                return "mac";
             case LINUX:
             case UNIX:
                 return "unix";
@@ -55,13 +75,16 @@ public class EnvironmentConfig {
     static public  String useChromeDriverPath() {
         String hostPlatform = getHostPlatform().toLowerCase();
         String projectHomePath = System.getProperty("user.dir");
+        System.out.println("The host platform is " + hostPlatform);
            switch (hostPlatform) {
-            case "unix":
-                return (projectHomePath + "/chromeDrivers");
-            case "windows":
-                return (projectHomePath + "\\chromeDrivers");
-            default:
-                return "nomatch";
+               case "mac":
+                   return (projectHomePath + "/chromeDrivers");
+                case "unix":
+                    return (projectHomePath + "/chromeDrivers");
+                case "windows":
+                    return (projectHomePath + "\\chromeDrivers");
+                default:
+                    return "nomatch in project chromeDriver map";
         }
     }
 

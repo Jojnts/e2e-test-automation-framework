@@ -36,7 +36,8 @@ public class GdprPage {
         // Godkänn ... läs igenom våra villkor innan du fortsätter.
         _checkBoxList.get(0).click();
         _checkBoxList.get(1).click();
+        waitForNextViewToBeLoaded(1000);
         _continueButton.click();
-        waitForNextViewToBeLoaded(3500);
+        waitForNextViewToBeLoaded(1500);
     }
 }

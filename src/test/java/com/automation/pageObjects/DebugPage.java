@@ -1,5 +1,6 @@
 package com.automation.pageObjects;
 
+import com.automation.helpFunctions.HelpFunctions;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebElement;
@@ -22,7 +23,7 @@ public class DebugPage{
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    private static final String _checkBoxCss = "div.check-box__check";
+    private static final String _checkBoxCss = "div.check-box__check"; //check-box--checked
     @FindBy(css = _checkBoxCss)
     private WebElement _checkBox;
 
@@ -35,14 +36,17 @@ public class DebugPage{
     @FindBy(css = "div#NO")
     private WebElement _radioButtonNO;
 
+    @FindBy(css = "input[name='baseUrl']")
+    private WebElement _url;
+
     @FindBy(css = "button.debug-settings__button")
     private List<WebElement> _buttonList;;
 
     private void clickToCheckTheDebugValuesAndSeRadioButton(final AppiumDriver driver, String countryCode) {
-        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _checkBoxCss, 8);
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _checkBoxCss, 2);
+        Boolean found = waitForThePageObjectToBeLoadedToFindTheWebElement(driver, "div.check-box--checked", 1);
         LOG.info("Select the debug check box");
-        _checkBox.click();
-
+        if (!found){_checkBox.click();}
         switch (countryCode.toLowerCase()) {
             case "se":
                 _radioButtonSE.click();
@@ -57,8 +61,18 @@ public class DebugPage{
                 _radioButtonSE.click();
                 break;
         }
-        _buttonList.get(0).click();  //reload button
-        waitForNextViewToBeLoaded(4000);
+        String url = driver.getCapabilities().getCapability("testEnvUrl").toString();
+        if(url.compareTo("")!=0) {
+            _url.clear();
+            _url.sendKeys(url);
+            _buttonList.get(0).click();  //reload button
+        }
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        //waitForNextViewToBeLoaded(4000);
         _checkBox.click();
     }
     public void tapEmailLoginButton(final AppiumDriver driver, String countryCode) {

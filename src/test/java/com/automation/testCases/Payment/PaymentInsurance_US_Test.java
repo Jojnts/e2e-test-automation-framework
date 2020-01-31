@@ -43,7 +43,7 @@ public class PaymentInsurance_US_Test extends BaseTest {
     }
 
     @Test (priority = -5, dependsOnMethods = {"createAccountInTheSignupFlow" }, dataProvider = "userPerCountryAndFailedPayment")
-    public void messageForFailedPayment(String countryCode, String cardNumber, String cardDescr, Enum choice, Enum cardValid  ) {
+    public void messageForFailedPayment( String countryCode, String cardNumber, String cardDescr, Enum choice, Enum cardValid  ) {
         SoftAssert softAssertion = new SoftAssert();
         paymentActivityUSPage.inputInsuranceCompanyNotOk(driver);
         paymentPage.cardInputsAndPay(driver, cardNumber);
@@ -64,8 +64,8 @@ public class PaymentInsurance_US_Test extends BaseTest {
     @DataProvider(name="userPerCountryAndFailedPayment")
     public Object[][] getDataFailedPayment() {
         return new Object[][] {
-                {"US", "4100000000000019", "The charge is blocked as it's considered fraudulent", choose3ds.No3dVerification, cardStatus.Card_declined},
-                {"US", "4000000000000119", "Charge is declined with a processing_error code", choose3ds.No3dVerification, cardStatus.Card_declined}
+                { "US", "4100000000000019", "The charge is blocked as it's considered fraudulent", choose3ds.No3dVerification, cardStatus.Card_declined},
+                { "US", "4000000000000119", "Charge is declined with a processing_error code", choose3ds.No3dVerification, cardStatus.Card_declined}
         };
     }
     //Betalningen nekades. Kontrollera att ditt kort är öppet för internetköp eller kontakta din bank för mer information.

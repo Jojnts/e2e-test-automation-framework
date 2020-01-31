@@ -56,18 +56,18 @@ public class PaymentCardDeclinedTest extends BaseTest {
     @DataProvider(name="userPerCountryAndFailedPayment")
     public Object[][] getDataFailedPayment() {
         return new Object[][] {
-                {"SE", "4000000000003220", "", choose3ds.Fail, cardStatus.Card_succeed},
-                {"SE", "4000008400001629", "", choose3ds.Confirm, cardStatus.Card_declined},
-                {"SE", "4100000000000019", "The charge is blocked as it's considered fraudulent", choose3ds.No3dVerification, cardStatus.Card_declined},
-                {"SE", "4000000000000002", "Charge is declined with a card_declined code", choose3ds.No3dVerification, cardStatus.Card_declined},
-                {"SE", "4000000000009995", "The decline_code attribute is insufficient_funds", choose3ds.No3dVerification, cardStatus.Card_declined},
-                {"SE", "4000000000009987", "The decline_code attribute is lost_card", choose3ds.No3dVerification, cardStatus.Card_declined},
-                {"SE", "4000000000009979", "The decline_code attribute is stolen_card", choose3ds.No3dVerification, cardStatus.Card_declined},
-                {"SE", "4000000000000069", "Charge is declined with an expired_card code", choose3ds.No3dVerification, cardStatus.Card_declined},
-                {"SE", "4000000000000127", "Charge is declined with an incorrect_cvc code", choose3ds.No3dVerification, cardStatus.Card_declined},
-                {"SE", "4000000000000119", "Charge is declined with a processing_error code", choose3ds.No3dVerification, cardStatus.Card_declined}
+                { "SE",  "4100 0000 0000 0019", "The charge is blocked as it's considered fraudulent", choose3ds.No3dVerification, cardStatus.Card_declined},
+                { "SE", "4000 0000 0000 0002", "Charge is declined with a card_declined code", choose3ds.No3dVerification, cardStatus.Card_declined},
+                { "SE", "4000 0000 0000 9995", "The decline_code attribute is insufficient_funds", choose3ds.No3dVerification, cardStatus.Card_declined},
+                { "SE", "4000 0000 0000 9987", "The decline_code attribute is lost_card", choose3ds.No3dVerification, cardStatus.Card_declined},
+                { "SE", "4000 0000 0000 9979", "The decline_code attribute is stolen_card", choose3ds.No3dVerification, cardStatus.Card_declined},
+                { "SE", "4000 0000 0000 0069", "Charge is declined with an expired_card code", choose3ds.No3dVerification, cardStatus.Card_declined},
+                { "SE", "4000 0000 0000 0127", "Charge is declined with an incorrect_cvc code", choose3ds.No3dVerification, cardStatus.Card_declined},
+                { "SE", "4000 0000 0000 0119", "Charge is declined with a processing_error code", choose3ds.No3dVerification, cardStatus.Card_declined}
         };
     }
+
+
     //Betalningen nekades. Kontrollera att ditt kort är öppet för internetköp eller kontakta din bank för mer information.
     // 4000008400001629 4100000000000019 4000000000000002 4000000000009995 4000000000009987 4000000000009979 4000000000000069 4000000000000127
     //Betalningen misslyckades. Var god försök igen eller kontakta Joint Academy om problem kvarstår.

@@ -2,6 +2,7 @@ package com.automation.pageObjects;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -26,7 +27,7 @@ public class PatientMobileShowProfileReceiptPage {
 
     public Boolean checkForReceipt(final AppiumDriver driver) {
         LOG.info("Check for receipt");
-        return waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _receiptCss, 3);
+        return waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _receiptCss, 5);
     }
 
     private static final String _backButtonCss = "div.top-nav-bar__back";
@@ -36,6 +37,12 @@ public class PatientMobileShowProfileReceiptPage {
     public void clickBackButton(final AppiumDriver driver) {
         LOG.info("Click back buttton");
         waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _backButtonCss, 2);
-        clickBack(driver);
+        String platform = driver.getCapabilities().getCapability(MobileCapabilityType.PLATFORM_NAME).toString().toLowerCase();
+        if(platform=="ios"){
+            _backButton.click();
+        } else {
+            clickBack(driver);
+        }
+
     }
 }

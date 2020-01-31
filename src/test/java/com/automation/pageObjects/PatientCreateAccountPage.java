@@ -63,7 +63,7 @@ public class PatientCreateAccountPage {
         _lastName.sendKeys(lastName);
         //to have unique user emails per device in parallel testing
         Capabilities cap = driver.getCapabilities();
-        String deviceNamefourCharacters = cap.getCapability("deviceName").toString().substring(0, 3);
+        String deviceNamefourCharacters = cap.getCapability("deviceBrand").toString().substring(0, 3);
         _email.sendKeys(deviceNamefourCharacters + userEmail);
         _inputNameHeader.get(3).click();
         driver.hideKeyboard();

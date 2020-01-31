@@ -33,15 +33,32 @@ public class TherapistStartPage {
         return this.therapistLastName;
     }
 
-    private static final String  _topNavListCss = "li.app-nav__item";
+    private static final String  _topNavListCss = "ul.app-nav__list.app-nav__list--main li.app-nav__item  a.app-nav__link--padding-xs";
     @FindBy(css = _topNavListCss)
     public List<WebElement> _topNavList;
 
-    private static final String  _inviteCss = ".patient-list__invite-link";
+    private static final String  _patientTabCss = "ul.app-nav__list.app-nav__list--main li.app-nav__item a.app-nav__link--active";
+    @FindBy(css = _patientTabCss)
+    public WebElement _patientTab;
+
+    private static final String  _inviteCss = "invite-link.patient-list__invite-link icon-link div.icon-link";
     @FindBy(css = _inviteCss)
     public WebElement _invite;
 
-    private static final String  _textInputListCss = ".margin-bottom-tiny";
+    private static final String  _firstNameCss = "fullscreen-popup.invite-user__mobile [name='first_name']";
+    @FindBy(css = _firstNameCss)
+    public WebElement _firstName;
+
+    private static final String  _lastNameCss = "fullscreen-popup.invite-user__mobile [name='last_name']";
+    @FindBy(css = _lastNameCss)
+    public WebElement _lastName;
+
+    private static final String  _emailCss = "fullscreen-popup.invite-user__mobile [name='email']";
+    @FindBy(css = _emailCss)
+    public WebElement _email;
+
+
+    private static final String  _textInputListCss = "fullscreen-popup.invite-user__mobile input.ng-pristine";
     @FindBy(css = _textInputListCss)
     public List<WebElement> _textInputList;
 
@@ -58,7 +75,7 @@ public class TherapistStartPage {
 
     private void navigateToPatient(final AppiumDriver driver) {
         LOG.info("Navigate to patient tab");
-        boolean found = waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _topNavListCss, 10);
+        boolean found = waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _topNavListCss, 5);
         if (found) {
             _topNavList.get(1).click();
         } else {
@@ -75,30 +92,32 @@ public class TherapistStartPage {
 
     public void sendAnInviteToPatientAndLogout(final AppiumDriver driver, String firstName, String lastName, String userEmail) {
         clickDropDownMenu();
-        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _dropDownMenuChoicesCss, 3);
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _dropDownMenuChoicesCss, 5);
         _dropDownMenuChoices.get(0).click();
         getTheTherapistName();
         navigateToPatient(driver);
         LOG.info("Send invitation to a patient");
-        boolean found = waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _inviteCss, 10);
+        boolean found = waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _inviteCss, 5);
         if (found) {
             _invite.click();
         } else {
             throw new ElementNotVisibleException("The invite button was not found");
         }
-        waitForNextViewToBeLoaded(1000);
-        _textInputList.get(3).sendKeys(firstName);
-        _textInputList.get(4).sendKeys(lastName);
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _textInputListCss, 5);
+        _firstName.sendKeys(firstName);
+        waitForNextViewToBeLoaded(500);
+        _lastName.sendKeys(lastName);
+        waitForNextViewToBeLoaded(500);
         Capabilities cap = driver.getCapabilities();
-        String deviceNamefourCharacters = cap.getCapability("deviceName").toString().substring(0, 3);
-        _textInputList.get(5).sendKeys(deviceNamefourCharacters + userEmail);
-        waitForNextViewToBeLoaded(1500);
+        String deviceNamefourCharacters = cap.getCapability("deviceBrand").toString().substring(0, 3);
+        _email.sendKeys(deviceNamefourCharacters + userEmail);
+        waitForNextViewToBeLoaded(500);
         _inviteButton.get(1).click();
         int counter = 0;
         while ( counter < 2) { //a bugg in the app, need to click twise
             counter++;
             clickDropDownMenu();
-            waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _dropDownMenuChoicesCss, 8);
+            waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _dropDownMenuChoicesCss, 4);
             _dropDownMenuChoices.get(4).click();
         }
     }
@@ -107,7 +126,7 @@ public class TherapistStartPage {
     @FindBy(css = _myNameCss)
     public WebElement _myName;
 
-    private static final String  _dropDownMenuCss = "div.app-nav__dropdown";
+    private static final String  _dropDownMenuCss = "div.app-nav__dropdown a.app-nav__dropdown__toggle";
     @FindBy(css = _dropDownMenuCss)
     public WebElement _dropDownMenu;
 

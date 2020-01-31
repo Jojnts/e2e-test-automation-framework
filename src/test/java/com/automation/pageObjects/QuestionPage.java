@@ -90,7 +90,7 @@ public class QuestionPage {
     public void startTheQuestionary(final AppiumDriver driver, String countryCode) {
 
         LOG.info("Start the question flow");
-        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _welcomeQuestionsCss, 0);
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _welcomeQuestionsCss, 15);
         //getTheNameOfTheTherapist(); changed during my vaccation in July
         _welcomeQuestionsButton.click();
         waitForNextViewToBeLoaded(1000);

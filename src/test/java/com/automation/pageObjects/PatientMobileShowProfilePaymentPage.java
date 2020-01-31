@@ -40,7 +40,7 @@ public class PatientMobileShowProfilePaymentPage {
 
     public void clickBackButton(final AppiumDriver driver) {
         LOG.info("Click back buttton");
-        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _backButtonCss, 0);
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _backButtonCss, 4);
         clickBack(driver);
     }
 }

@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import java.util.logging.Logger;
 
 public class EmailLoginTest extends BaseTest {
-     private final Logger LOG = Logger.getLogger(EmailLoginTest.class.getName());
+    private final Logger LOG = Logger.getLogger(EmailLoginTest.class.getName());
 
     @Test(groups = {"groupLogin"})
     public void fromStartpageLoginWithWrongCredentialSE() {
@@ -33,5 +33,10 @@ public class EmailLoginTest extends BaseTest {
     public void fromStartpageLoginWitDdifferentWrongCredential(String cc, String userEmail, String userPassword) {
         authLoginPage.enterLoginCredentials(driver, userEmail, userPassword);
         Assert.assertEquals(authLoginPage.errorMessageTextIs(driver),"Fel e-postadress eller lösenord." ,"The error message is not correct ");
+    }
+
+    @Test()
+    public void testMyFirst() {
+        Assert.assertEquals("1","1" ,"The error message is not correct ");
     }
 }

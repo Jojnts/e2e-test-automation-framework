@@ -25,11 +25,11 @@ public class PaymentMethodPage {
     @FindBy(css = _GoToPayCss)
     private WebElement _GoToPayButton;
 
-    private static final String  _FrikortYesCss = "#radio--true";
+    private static final String  _FrikortYesCss = ".radio__circle#radio--true";
     @FindBy(css = _FrikortYesCss)
     private WebElement _FrikortYesButton;
 
-    private static final String  _FrikortNoCss = "#radio--false";
+    private static final String  _FrikortNoCss = ".radio__circle#radio--false";
     @FindBy(css = _FrikortNoCss)
     private WebElement _FrikortNoButton;
 
@@ -39,7 +39,7 @@ public class PaymentMethodPage {
 
     public void useCard(final AppiumDriver driver) {
         LOG.info("Have no insurance");
-        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _FrikortNoCss, 5);
+        waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _FrikortNoCss, 8);
         _FrikortNoButton.click();
         waitForThePageObjectToBeLoadedToFindTheWebElement(driver, _GoToPayCss, 5);
         _GoToPayButton.click();

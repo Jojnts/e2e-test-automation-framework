@@ -1,32 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All tests" parallel="tests" thread-count="2" >
-    <test name="Android device 1" preserve-order="true">
-        <parameter name="PLATFORM_VERSION_" value="6.0"/>
-        <parameter name="UDID_" value="52RBB18123202825"/>
+    <!--test name="## QA Phone 5s  (black)" preserve-order="true">
+        <parameter name="PLATFORM_VERSION_" value="10.2.1"/>
+        <parameter name="UDID_" value="3903a2c0b593594f1a958ef6a89cd4a8cc184213"/>
+        <parameter name="NAME_" value="3903a2c0b593594f1a958ef6a89cd4a8cc184213"/>
+        <parameter name="PLATFORM_" value="iOS"/>
         <parameter name="APPIUM_PORT_" value="5100"/>
-        <parameter name="PLATFORM_" value="Android"/>
         <classes>
             <class name="com.automation.testCases.Payment.PaymentCardDeclinedTest"/>
             <class name="com.automation.testCases.Signup.EmailSignupTest"/>
-            <class name="com.automation.testCases.Login.EmailLoginTest"/>
+        </classes>
+    </test-->
+    <test name="## QA iPhone (white)" preserve-order="true">
+        <parameter name="PLATFORM_VERSION_" value="13.2.3"/>
+        <parameter name="UDID_" value="6f7ccd9367ca21a59a787f5f3e2a1c15b3074cf7"/>
+        <parameter name="NAME_" value="6f7ccd9367ca21a59a787f5f3e2a1c15b3074cf7"/>
+        <parameter name="PLATFORM_" value="iOS"/>
+        <parameter name="APPIUM_PORT_" value="5100"/>
+        <classes>
+            <class name="com.automation.testCases.Payment.PaymentCardDeclinedTest"/>
+            <class name="com.automation.testCases.Payment.PaymentCardAcceptedTest"/>
+            <class name="com.automation.testCases.Signup.EmailSignupTest"/>
         </classes>
     </test>
-    <test name="Android device 2" preserve-order="true">
+    <test name="## QA Android (Samsung Calaxy S7)" preserve-order="true">
         <parameter name="PLATFORM_VERSION_" value="8.0"/>
-        <parameter name="UDID_" value="CB512DERZH"/>
-        <parameter name="APPIUM_PORT_" value="5200"/>
+        <parameter name="UDID_" value="ce021822c546ec490b"/>
+        <parameter name="NAME_" value="ce021822c546ec490b"/>
         <parameter name="PLATFORM_" value="Android"/>
+        <parameter name="APPIUM_PORT_" value="5200"/>
+        <classes>
+            <class name="com.automation.testCases.Payment.PaymentCardDeclinedTest"/>
+            <class name="com.automation.testCases.Payment.PaymentCardAcceptedTest"/>
+            <class name="com.automation.testCases.Signup.EmailSignupTest"/>
+        </classes>
+    </test>
+    <!--test name="## QA Android (Samsung Calaxy S7)" preserve-order="true">
+        <parameter name="PLATFORM_VERSION_" value="8.0"/>
+        <parameter name="UDID_" value="ce021822c546ec490b"/>
+        <parameter name="NAME_" value="ce021822c546ec490b"/>
+        <parameter name="PLATFORM_" value="Android"/>
+        <parameter name="APPIUM_PORT_" value="5400"/>
         <classes>
             <class name="com.automation.testCases.Payment.PaymentCardAcceptedTest"/>
         </classes>
-    </test>
+    </test-->
 </suite>
+
 
 <!--<parameter name="PLATFORM_VERSION_" value="6.0"/>
     <parameter name="UDID_" value="52RBB18123202825"/>
+    <parameter name="PLATFORM_" value="Android"/>
+    <parameter name="APPIUM_PORT_" value="5200"/>
 
     <parameter name="PLATFORM_VERSION_" value="7.1.1"/>
     <parameter name="UDID_" value="emulator-5554"/>
 
+
+
+    <test name="## QA Phone 5s  (black)" preserve-order="true">
+    <parameter name="PLATFORM_VERSION_" value="10.2.1"/>
+    <parameter name="UDID_" value="3903a2c0b593594f1a958ef6a89cd4a8cc184213"/>
+    <parameter name="NAME_" value="3903a2c0b593594f1a958ef6a89cd4a8cc184213"/>
+    <parameter name="PLATFORM_" value="iOS"/>
+    <parameter name="APPIUM_PORT_" value="5100"/>
+
+    <test name="## QA iPhone (red)" preserve-order="true">
+     <parameter name="PLATFORM_VERSION_" value="13.1.3"/>
+     <parameter name="UDID_" value="9275fefa124f9fd3d7fb318256ac5856a411c6d4"/>
+     <parameter name="NAME_" value="9275fefa124f9fd3d7fb318256ac5856a411c6d4"/>
+     <parameter name="PLATFORM_" value="iOS"/>
+     <parameter name="APPIUM_PORT_" value="5200"/>
+
+     <test name="## QA iPhone (white)" preserve-order="true">
+     <parameter name="PLATFORM_VERSION_" value="13.2.3"/>
+     <parameter name="UDID_" value="6f7ccd9367ca21a59a787f5f3e2a1c15b3074cf7"/>
+     <parameter name="NAME_" value="6f7ccd9367ca21a59a787f5f3e2a1c15b3074cf7"/>
+     <parameter name="PLATFORM_" value="iOS"/>
+     <parameter name="APPIUM_PORT_" value="5200"/>
+
+    <test name="## Private Android (Sony Z1)" preserve-order="true">
     <parameter name="PLATFORM_VERSION_" value="8.0"/>
-    <parameter name="UDID_" value="CB512DERZH"/>       -->
+    <parameter name="UDID_" value="192.168.128.59:5555"/>
+    <parameter name="NAME_" value="CB512DERZH"/>
+    <parameter name="PLATFORM_" value="Android"/>
+    <parameter name="APPIUM_PORT_" value="5200"/>
+
+    <test name="## QA Android (Samsung Calaxy S7)" preserve-order="true">
+    <parameter name="PLATFORM_VERSION_" value="8.0"/>
+    <parameter name="UDID_" value="192.168.128.150:5555"/>
+    <parameter name="NAME_" value="ce021822c546ec490b"/>
+    <parameter name="PLATFORM_" value="Android"/>
+    <parameter name="APPIUM_PORT_" value="5200"/>
+
+
+
+    -->

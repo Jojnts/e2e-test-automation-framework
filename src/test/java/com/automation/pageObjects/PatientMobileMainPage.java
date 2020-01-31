@@ -48,7 +48,7 @@ public class PatientMobileMainPage {
         }
     }
 
-    private static final String _buttonStartCss = "div.activity-card-mobile__content";
+    private static final String _buttonStartCss = "button.activity-card-mobile__button";//"div.activity-card-mobile__content";
     @FindBy(css = _buttonStartCss)
     private WebElement _buttonStart;
 
